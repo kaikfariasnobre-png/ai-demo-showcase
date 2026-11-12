@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia Azzes Fitness — academia</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --accent: #059669;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--primary); }
+    .container { width: min(1040px, calc(100% - 2rem)); margin-inline: auto; }
+    .preview-strip {
+      background: #0f172a;
+      color: #cbd5e1;
+      font-size: 0.78rem;
+      text-align: center;
+      padding: 0.45rem 1rem;
+    }
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 64px;
+      flex-wrap: wrap;
+      padding-block: 0.5rem;
+    }
+    .brand { font-weight: 800; font-size: 1.05rem; letter-spacing: -0.02em; color: var(--ink); }
+    .brand-sub { display: block; font-size: 0.76rem; font-weight: 600; color: var(--muted); }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 12px;
+      padding: 0.72rem 1.25rem;
+      font-size: 0.94rem;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.14);
+      transition: transform 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .hero {
+      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      color: #f8fafc;
+      padding: 3.5rem 0 3.75rem;
+    }
+    .kicker {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .rating-pill {
+      display: inline-block;
+      margin-left: 0.5rem;
+      background: rgba(250, 204, 21, 0.16);
+      border: 1px solid rgba(250, 204, 21, 0.45);
+      color: #fde047;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      margin: 0 0 0.9rem;
+      font-size: clamp(1.85rem, 4vw, 2.85rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      max-width: 19ch;
+    }
+    .hero p {
+      margin: 0 0 1.6rem;
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      max-width: 58ch;
+    }
+    section { padding: 3rem 0; }
+    h2 {
+      margin: 0 0 1.4rem;
+      font-size: clamp(1.35rem, 2.6vw, 1.85rem);
+      letter-spacing: -0.02em;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.15rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.35rem;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+    }
+    .card-index {
+      display: inline-block;
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
+    .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .split {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem;
+    }
+    .why-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.85rem;
+    }
+    .why-list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 0.65rem;
+      align-items: start;
+    }
+    .check {
+      display: grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.14);
+      color: #059669;
+      font-weight: 800;
+      font-size: 0.82rem;
+    }
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.25rem;
+      display: grid;
+      gap: 0.65rem;
+      font-size: 0.94rem;
+      word-break: break-word;
+    }
+    .faq-stack { display: grid; gap: 0.75rem; }
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.95rem 1.15rem;
+    }
+    .faq-item summary { font-weight: 700; cursor: pointer; }
+    .faq-item p { margin: 0.6rem 0 0; color: var(--muted); font-size: 0.92rem; }
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 1.5rem 0 4.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    .floating-wa {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 30;
+      background: #16a34a;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 0.78rem 1.15rem;
+      border-radius: 999px;
+      box-shadow: 0 12px 28px rgba(22, 163, 74, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-strip">Preview Personalizado ao Vivo para Academia Azzes Fitness</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        Academia Azzes Fitness
+        <span class="brand-sub">academia • Navegantes</span>
+      </div>
+      <a class="btn btn-sm" href="https://wa.me/554733193070?text=Ol%C3%A1%2C%20Academia%20Azzes%20Fitness%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+        Fale Conosco no WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div>
+          <span class="kicker">academia • Navegantes</span>
+          <div class="rating-pill">★ 4.8 (172 avaliações no Google)</div>
+        </div>
+        <h1>Transforme sua saúde e bem-estar na Academia Azzes Fitness em Navegantes</h1>
+        <p>Venha treinar em um ambiente completo, com estrutura de qualidade e foco total nos seus objetivos físicos. Conheça nossos planos e modalidades.</p>
+        <a class="btn" href="https://wa.me/554733193070?text=Ol%C3%A1%2C%20Academia%20Azzes%20Fitness%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+          Fale Conosco no WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <section aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading">Nossos Serviços</h2>
+        <div class="cards-grid">
+          <article class="card"><span class="card-index">01</span><h3>Musculação Completa</h3><p>Equipamentos modernos e variados para ganho de massa muscular, tonificação e condicionamento físico geral.</p></article>
+<article class="card"><span class="card-index">02</span><h3>Treinamento Funcional</h3><p>Exercícios dinâmicos que melhoram a agilidade, o equilíbrio e a força utilizando o próprio peso corporal e acessórios.</p></article>
+<article class="card"><span class="card-index">03</span><h3>Aulas Coletivas</h3><p>Atividades em grupo motivadoras para manter você ativo, queimar calorias e interagir com outros alunos.</p></article>
+<article class="card"><span class="card-index">04</span><h3>Avaliação Física</h3><p>Acompanhamento profissional para mensurar seus resultados e direcionar seu treino de forma personalizada.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container split">
+        <div class="panel">
+          <h2>Por que escolher Academia Azzes Fitness</h2>
+          <ul class="why-list">
+            <li><span class="check" aria-hidden="true">✓</span><span>Localização privilegiada na Rua Manoel Izidro, Navegantes</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Equipamentos e estrutura dedicados ao seu desempenho</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Atendimento focado em ajudar você a alcançar suas metas</span></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Contato e Localização</h2>
+          <ul class="contact-list">
+            <li><strong>Endereço:</strong> Rua Manoel Izidro, 505 - 2</li><li><strong>Telefone:</strong> <a href="tel:04733193070">04733193070</a></li><li><strong>Site Atual:</strong> <a href="https://www.facebook.com/academiaazzes.azzes/" target="_blank" rel="noopener noreferrer">https://www.facebook.com/academiaazzes.azzes/</a></li>
+          </ul>
+          <a class="btn" href="https://wa.me/554733193070?text=Ol%C3%A1%2C%20Academia%20Azzes%20Fitness%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+            Fale Conosco no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-heading">
+      <div class="container">
+        <h2 id="faq-heading">Dúvidas Frequentes</h2>
+        <div class="faq-stack">
+          <details class="faq-item"><summary>Quais são os horários de funcionamento da academia?</summary><p>Entre em contato conosco por telefone ou WhatsApp para consultar os horários atualizados de atendimento e funcionamento.</p></details>
+<details class="faq-item"><summary>Como faço para me matricular?</summary><p>Você pode visitar nossa unidade na Rua Manoel Izidro, 505 - 2, em Navegantes, ou falar diretamente conosco através do botão de contato.</p></details>
+<details class="faq-item"><summary>Quais modalidades estão disponíveis para os alunos?</summary><p>Oferecemos musculação completa, treinamento funcional e aulas coletivas para atender diferentes objetivos e perfis.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <strong>Academia Azzes Fitness</strong> — Preview demonstrativo criado exclusivamente para Academia Azzes Fitness.
+    </div>
+  </footer>
+
+  <a class="floating-wa" href="https://wa.me/554733193070?text=Ol%C3%A1%2C%20Academia%20Azzes%20Fitness%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Fale Conosco no WhatsApp">Fale Conosco no WhatsApp</a>
+</body>
+</html>

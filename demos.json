@@ -1,0 +1,108 @@
+{
+  "demos": [
+    {
+      "slug": "academia-azzes-fitness-navegantes",
+      "name": "Academia Azzes Fitness",
+      "niche": "academia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/academia-azzes-fitness-navegantes/index.html"
+    },
+    {
+      "slug": "academia-pratique-fitness-navegantes-navegantes",
+      "name": "Academia Pratique Fitness - Navegantes",
+      "niche": "academia",
+      "city": "navegantes",
+      "lang": "pt-BR",
+      "url": "demos/academia-pratique-fitness-navegantes-navegantes/index.html"
+    },
+    {
+      "slug": "auto-mecanica-santo-anjo-24hrs-blumenau",
+      "name": "Auto Mecânica Santo Anjo 24hrs.",
+      "niche": "oficina mecanica",
+      "city": "Blumenau",
+      "lang": "pt-BR",
+      "url": "demos/auto-mecanica-santo-anjo-24hrs-blumenau/index.html"
+    },
+    {
+      "slug": "autocan-auto-mecanica-canto-do-rio-blumenau",
+      "name": "Autocan - Auto Mecânica Canto do Rio",
+      "niche": "oficina mecanica",
+      "city": "Blumenau",
+      "lang": "pt-BR",
+      "url": "demos/autocan-auto-mecanica-canto-do-rio-blumenau/index.html"
+    },
+    {
+      "slug": "barbearia-barth-s-navegantes",
+      "name": "Barbearia Barth's",
+      "niche": "barbearia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/barbearia-barth-s-navegantes/index.html"
+    },
+    {
+      "slug": "clinica-biavatti-itajai-botox-preenchimentos-estetica-e-bioestimulador-de-colageno-itajai",
+      "name": "Clínica Biavatti Itajaí- Botox, preenchimentos, Estética e Bioestimulador de colágeno",
+      "niche": "clinica estetica",
+      "city": "Itajai",
+      "lang": "pt-BR",
+      "url": "demos/clinica-biavatti-itajai-botox-preenchimentos-estetica-e-bioestimulador-de-colageno-itajai/index.html"
+    },
+    {
+      "slug": "clinica-d-zorzi-estetica-saude-balneario-camboriu",
+      "name": "Clinica D'Zorzi Estética & Saúde",
+      "niche": "clinica estetica",
+      "city": "Balneario Camboriu",
+      "lang": "pt-BR",
+      "url": "demos/clinica-d-zorzi-estetica-saude-balneario-camboriu/index.html"
+    },
+    {
+      "slug": "clinica-d-zorzi-estetica-saude-itajai",
+      "name": "Clinica D'Zorzi Estética & Saúde",
+      "niche": "clinica estetica",
+      "city": "Itajai",
+      "lang": "pt-BR",
+      "url": "demos/clinica-d-zorzi-estetica-saude-itajai/index.html"
+    },
+    {
+      "slug": "clinica-de-estetica-hamonir-itajai",
+      "name": "Clínica de Estética Hamonir",
+      "niche": "clinica estetica",
+      "city": "Itajai",
+      "lang": "pt-BR",
+      "url": "demos/clinica-de-estetica-hamonir-itajai/index.html"
+    },
+    {
+      "slug": "clinica-dra-laiana-schneider-clinica-you-balneario-camboriu",
+      "name": "Clínica Dra Laiana Schneider - Clínica You",
+      "niche": "clinica estetica",
+      "city": "Balneario Camboriu",
+      "lang": "pt-BR",
+      "url": "demos/clinica-dra-laiana-schneider-clinica-you-balneario-camboriu/index.html"
+    },
+    {
+      "slug": "clinica-estetica-virtuosa-balneario-camboriu",
+      "name": "Clínica Estética Virtuosa",
+      "niche": "clinica estetica",
+      "city": "Balneario Camboriu",
+      "lang": "pt-BR",
+      "url": "demos/clinica-estetica-virtuosa-balneario-camboriu/index.html"
+    },
+    {
+      "slug": "clinica-lais-loraine-tricologia-e-estetica-balneario-camboriu",
+      "name": "Clínica Laís Loraine | Tricologia e estética",
+      "niche": "clinica estetica",
+      "city": "Balneario Camboriu",
+      "lang": "pt-BR",
+      "url": "demos/clinica-lais-loraine-tricologia-e-estetica-balneario-camboriu/index.html"
+    },
+    {
+      "slug": "d-luxe-clinica-de-estetica-itajai",
+      "name": "D'Luxe Clinica de Estética",
+      "niche": "clinica estetica",
+      "city": "Itajai",
+      "lang": "pt-BR",
+      "url": "demos/d-luxe-clinica-de-estetica-itajai/index.html"
+    }
+  ]
+}
