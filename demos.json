@@ -1,6 +1,22 @@
 {
   "demos": [
     {
+      "slug": "academia-ad3-navegantes-centro-navegantes",
+      "name": "Academia AD3 Navegantes - Centro",
+      "niche": "academia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/academia-ad3-navegantes-centro-navegantes/index.html"
+    },
+    {
+      "slug": "academia-araujo-coelho-navegantes",
+      "name": "Academia Araujo Coelho",
+      "niche": "academia",
+      "city": "navegantes",
+      "lang": "pt-BR",
+      "url": "demos/academia-araujo-coelho-navegantes/index.html"
+    },
+    {
       "slug": "academia-azzes-fitness-navegantes",
       "name": "Academia Azzes Fitness",
       "niche": "academia",
@@ -9,12 +25,36 @@
       "url": "demos/academia-azzes-fitness-navegantes/index.html"
     },
     {
+      "slug": "academia-novos-habitos-navegantes",
+      "name": "Academia Novos Habitos",
+      "niche": "academia",
+      "city": "navegantes",
+      "lang": "pt-BR",
+      "url": "demos/academia-novos-habitos-navegantes/index.html"
+    },
+    {
       "slug": "academia-pratique-fitness-navegantes-navegantes",
       "name": "Academia Pratique Fitness - Navegantes",
       "niche": "academia",
       "city": "navegantes",
       "lang": "pt-BR",
       "url": "demos/academia-pratique-fitness-navegantes-navegantes/index.html"
+    },
+    {
+      "slug": "academia-wave-navegantes-navegantes",
+      "name": "Academia Wave Navegantes",
+      "niche": "academia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/academia-wave-navegantes-navegantes/index.html"
+    },
+    {
+      "slug": "am-studio-de-pilates-joinville",
+      "name": "AM Studio de Pilates",
+      "niche": "pilates",
+      "city": "Joinville",
+      "lang": "pt-BR",
+      "url": "demos/am-studio-de-pilates-joinville/index.html"
     },
     {
       "slug": "auto-mecanica-e-eletrica-jc-blumenau",
@@ -63,6 +103,14 @@
       "city": "Navegantes",
       "lang": "pt-BR",
       "url": "demos/barbearia-black-house-navegantes/index.html"
+    },
+    {
+      "slug": "barbearia-meraki-navegantes",
+      "name": "Barbearia Meraki",
+      "niche": "barbearia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/barbearia-meraki-navegantes/index.html"
     },
     {
       "slug": "clinica-biavatti-itajai-botox-preenchimentos-estetica-e-bioestimulador-de-colageno-itajai",
@@ -137,12 +185,28 @@
       "url": "demos/d-luxe-clinica-de-estetica-itajai/index.html"
     },
     {
+      "slug": "jm-barbearia-navegantes",
+      "name": "JM Barbearia",
+      "niche": "barbearia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/jm-barbearia-navegantes/index.html"
+    },
+    {
       "slug": "lord-s-barber-navegantes",
       "name": "LORD'S BARBER",
       "niche": "barbearia",
       "city": "Navegantes",
       "lang": "pt-BR",
       "url": "demos/lord-s-barber-navegantes/index.html"
+    },
+    {
+      "slug": "lunni-clinic-clinica-de-estetica-avancada-tratamentos-faciais-e-corporais-itajai",
+      "name": "Lunni Clinic - Clínica de Estética Avançada | Tratamentos Faciais e Corporais",
+      "niche": "clinica estetica",
+      "city": "Itajai",
+      "lang": "pt-BR",
+      "url": "demos/lunni-clinic-clinica-de-estetica-avancada-tratamentos-faciais-e-corporais-itajai/index.html"
     },
     {
       "slug": "momentum-centro-de-treinamento-navegantes",
@@ -161,6 +225,22 @@
       "url": "demos/moon-pilates-joinville/index.html"
     },
     {
+      "slug": "nomaclub-joinville",
+      "name": "Nomaclub",
+      "niche": "pilates",
+      "city": "Joinville",
+      "lang": "pt-BR",
+      "url": "demos/nomaclub-joinville/index.html"
+    },
+    {
+      "slug": "panobianco-navegantes-navegantes",
+      "name": "Panobianco Navegantes",
+      "niche": "academia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/panobianco-navegantes-navegantes/index.html"
+    },
+    {
       "slug": "pilates-saude-boa-vista-unidade-2-joinville",
       "name": "Pilates + Saúde Boa Vista Unidade 2",
       "niche": "pilates",
@@ -175,6 +255,30 @@
       "city": "Blumenau",
       "lang": "pt-BR",
       "url": "demos/santos-auto-center-blumenau/index.html"
+    },
+    {
+      "slug": "start-fit-navegantes",
+      "name": "Start Fit",
+      "niche": "academia",
+      "city": "navegantes",
+      "lang": "pt-BR",
+      "url": "demos/start-fit-navegantes/index.html"
+    },
+    {
+      "slug": "studio-respilates-joinville",
+      "name": "Studio Respilates",
+      "niche": "pilates",
+      "city": "Joinville",
+      "lang": "pt-BR",
+      "url": "demos/studio-respilates-joinville/index.html"
+    },
+    {
+      "slug": "yoganic-yoga-treinamento-funcional-e-corrida-em-navegantes-navegantes",
+      "name": "YogāNic - Yoga, Treinamento Funcional e Corrida em Navegantes",
+      "niche": "academia",
+      "city": "navegantes",
+      "lang": "pt-BR",
+      "url": "demos/yoganic-yoga-treinamento-funcional-e-corrida-em-navegantes-navegantes/index.html"
     }
   ]
 }
