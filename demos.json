@@ -17,6 +17,22 @@
       "url": "demos/academia-pratique-fitness-navegantes-navegantes/index.html"
     },
     {
+      "slug": "auto-mecanica-e-eletrica-jc-blumenau",
+      "name": "Auto Mecânica e Elétrica JC",
+      "niche": "oficina mecanica",
+      "city": "Blumenau",
+      "lang": "pt-BR",
+      "url": "demos/auto-mecanica-e-eletrica-jc-blumenau/index.html"
+    },
+    {
+      "slug": "auto-mecanica-mensor-blumenau-blumenau",
+      "name": "Auto Mecânica Mensor - Blumenau",
+      "niche": "oficina mecanica",
+      "city": "Blumenau",
+      "lang": "pt-BR",
+      "url": "demos/auto-mecanica-mensor-blumenau-blumenau/index.html"
+    },
+    {
       "slug": "auto-mecanica-santo-anjo-24hrs-blumenau",
       "name": "Auto Mecânica Santo Anjo 24hrs.",
       "niche": "oficina mecanica",
@@ -39,6 +55,14 @@
       "city": "Navegantes",
       "lang": "pt-BR",
       "url": "demos/barbearia-barth-s-navegantes/index.html"
+    },
+    {
+      "slug": "barbearia-black-house-navegantes",
+      "name": "Barbearia black house",
+      "niche": "barbearia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/barbearia-black-house-navegantes/index.html"
     },
     {
       "slug": "clinica-biavatti-itajai-botox-preenchimentos-estetica-e-bioestimulador-de-colageno-itajai",
@@ -73,6 +97,14 @@
       "url": "demos/clinica-de-estetica-hamonir-itajai/index.html"
     },
     {
+      "slug": "clinica-dra-adriana-vinhal-instituto-academico-vinhal-balneario-camboriu",
+      "name": "Clínica Dra Adriana Vinhal - Instituto Acadêmico Vinhal",
+      "niche": "clinica estetica",
+      "city": "Balneario Camboriu",
+      "lang": "pt-BR",
+      "url": "demos/clinica-dra-adriana-vinhal-instituto-academico-vinhal-balneario-camboriu/index.html"
+    },
+    {
       "slug": "clinica-dra-laiana-schneider-clinica-you-balneario-camboriu",
       "name": "Clínica Dra Laiana Schneider - Clínica You",
       "niche": "clinica estetica",
@@ -103,6 +135,46 @@
       "city": "Itajai",
       "lang": "pt-BR",
       "url": "demos/d-luxe-clinica-de-estetica-itajai/index.html"
+    },
+    {
+      "slug": "lord-s-barber-navegantes",
+      "name": "LORD'S BARBER",
+      "niche": "barbearia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/lord-s-barber-navegantes/index.html"
+    },
+    {
+      "slug": "momentum-centro-de-treinamento-navegantes",
+      "name": "Momentum Centro de Treinamento",
+      "niche": "academia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/momentum-centro-de-treinamento-navegantes/index.html"
+    },
+    {
+      "slug": "moon-pilates-joinville",
+      "name": "Moon Pilates",
+      "niche": "pilates",
+      "city": "Joinville",
+      "lang": "pt-BR",
+      "url": "demos/moon-pilates-joinville/index.html"
+    },
+    {
+      "slug": "pilates-saude-boa-vista-unidade-2-joinville",
+      "name": "Pilates + Saúde Boa Vista Unidade 2",
+      "niche": "pilates",
+      "city": "Joinville",
+      "lang": "pt-BR",
+      "url": "demos/pilates-saude-boa-vista-unidade-2-joinville/index.html"
+    },
+    {
+      "slug": "santos-auto-center-blumenau",
+      "name": "Santos Auto Center",
+      "niche": "oficina mecanica",
+      "city": "Blumenau",
+      "lang": "pt-BR",
+      "url": "demos/santos-auto-center-blumenau/index.html"
     }
   ]
 }
