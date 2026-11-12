@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AM Studio de Pilates — pilates</title>
+  <title>AM Studio de Pilates — Pilates</title>
   <style>
     :root {
       --primary: #2563eb;
@@ -67,8 +67,19 @@
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
     .hero {
-      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/modern-fitness-pilates-studio.jpg') center / cover no-repeat;
       color: #f8fafc;
       padding: 3.5rem 0 3.75rem;
     }
@@ -124,6 +135,10 @@
       border-radius: 16px;
       padding: 1.35rem;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
     }
     .card-index {
       display: inline-block;
@@ -134,6 +149,15 @@
     }
     .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -217,10 +241,10 @@
     <div class="container header-inner">
       <div class="brand">
         AM Studio de Pilates
-        <span class="brand-sub">pilates • Joinville</span>
+        <span class="brand-sub">Pilates • Joinville</span>
       </div>
       <a class="btn btn-sm" href="#contact">
-        Agendar Minha Aula
+        Agende sua aula no WhatsApp
       </a>
     </div>
   </header>
@@ -229,14 +253,17 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="kicker">pilates • Joinville</span>
+          <span class="kicker">Pilates • Joinville</span>
           <div class="rating-pill">★ 5.0 (47 avaliações no Google)</div>
         </div>
-        <h1>AM Studio de Pilates em Joinville</h1>
-        <p>Transforme sua saúde e bem-estar com aulas de Pilates personalizadas na R. Pedro Mayerle, 160. Venha conhecer nosso espaço e conquistar mais qualidade de vida.</p>
-        <a class="btn" href="#contact">
-          Agendar Minha Aula
-        </a>
+        <h1>Transforme sua saúde e bem-estar com o AM Studio de Pilates em Joinville</h1>
+        <p>Descubra uma abordagem personalizada para fortalecer seu corpo, melhorar a postura e aliviar dores com atendimento especializado no AM Studio de Pilates.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">
+            Agende sua aula no WhatsApp
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/AM+Studio+de+Pilates/data=!4m7!3m6!1s0x94deb11563d19a01:0x4b2f49c274ee58e9!8m2!3d-26.3121646!4d-48.850372!16s%2Fg%2F11nqlqs809!19sChIJAZrRYxWx3pQR6VjudMJJL0s?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
       </div>
     </section>
 
@@ -244,9 +271,9 @@
       <div class="container">
         <h2 id="services-heading">Nossos Serviços</h2>
         <div class="cards-grid">
-          <article class="card"><span class="card-index">01</span><h3>Pilates Clássico e Contemporâneo</h3><p>Aulas completas focadas no fortalecimento muscular, melhoria da postura e aumento da flexibilidade para todos os níveis.</p></article>
-<article class="card"><span class="card-index">02</span><h3>Pilates para Gestantes</h3><p>Acompanhamento seguro e especializado para garantir o bem-estar e a preparação corporal durante a gravidez.</p></article>
-<article class="card"><span class="card-index">03</span><h3>Reabilitação e Postura</h3><p>Exercícios direcionados para o alívio de dores nas costas e recuperação de lesões com total segurança.</p></article>
+          <article class="card"><div><span class="card-index">01</span><h3>Pilates Clínico e Reabilitação</h3><p>Sessões focadas na recuperação de lesões, alívio de dores crônicas e correção postural com acompanhamento profissional.</p></div></article>
+<article class="card"><div><span class="card-index">02</span><h3>Pilates para Gestantes</h3><p>Exercícios seguros e adaptados para garantir o bem-estar da mãe e do bebê durante toda a gestação.</p></div></article>
+<article class="card"><div><span class="card-index">03</span><h3>Condicionamento Físico</h3><p>Aulas dinâmicas para ganho de força, flexibilidade, equilíbrio e tonificação muscular geral.</p></div></article>
         </div>
       </div>
     </section>
@@ -256,18 +283,18 @@
         <div class="panel">
           <h2>Por que escolher AM Studio de Pilates</h2>
           <ul class="why-list">
-            <li><span class="check" aria-hidden="true">✓</span><span>Atendimento personalizado para respeitar os seus objetivos e limites</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Localização privilegiada na R. Pedro Mayerle, 160 em Joinville</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Instrutores qualificados e dedicados à sua evolução diária</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Atendimento personalizado e focado nos seus objetivos individuais</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Ambiente acolhedor e totalmente equipado na R. Pedro Mayerle, 160</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Profissionais altamente capacitados para cuidar da sua saúde</span></li>
           </ul>
         </div>
         <div class="panel">
           <h2>Contato e Localização</h2>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> R. Pedro Mayerle, 160</li>
+            <li><strong>Endereço:</strong> R. Pedro Mayerle, 160</li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/AM+Studio+de+Pilates/data=!4m7!3m6!1s0x94deb11563d19a01:0x4b2f49c274ee58e9!8m2!3d-26.3121646!4d-48.850372!16s%2Fg%2F11nqlqs809!19sChIJAZrRYxWx3pQR6VjudMJJL0s?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
           </ul>
           <a class="btn" href="#contact">
-            Agendar Minha Aula
+            Agende sua aula no WhatsApp
           </a>
         </div>
       </div>
@@ -277,9 +304,9 @@
       <div class="container">
         <h2 id="faq-heading">Dúvidas Frequentes</h2>
         <div class="faq-stack">
-          <details class="faq-item"><summary>Preciso ter experiência prévia para começar o Pilates?</summary><p>Não é necessário ter experiência anterior. Nossas aulas são adaptadas para iniciantes e praticantes avançados, sempre com acompanhamento próximo.</p></details>
-<details class="faq-item"><summary>Onde o studio está localizado?</summary><p>Estamos localizados na R. Pedro Mayerle, 160, em Joinville, prontos para receber você com total comodidade.</p></details>
-<details class="faq-item"><summary>Como posso agendar uma aula experimental?</summary><p>Você pode entrar em contato conosco de forma rápida e prática diretamente pelo nosso botão de atendimento para garantir o seu horário.</p></details>
+          <details class="faq-item"><summary>O Pilates é indicado para qualquer idade?</summary><p>Sim, o Pilates pode ser praticado por pessoas de todas as idades, desde jovens até a melhor idade, pois os exercícios são adaptados às necessidades de cada aluno.</p></details>
+<details class="faq-item"><summary>Preciso ter experiência prévia para começar?</summary><p>Não é necessário ter experiência anterior. Nossos instrutores acompanham você desde a primeira aula, respeitando o seu ritmo e nível de condicionamento.</p></details>
+<details class="faq-item"><summary>Como faço para agendar uma aula experimental?</summary><p>Você pode entrar em contato conosco diretamente pelo WhatsApp para verificar horários disponíveis e agendar sua visita ao estúdio.</p></details>
         </div>
       </div>
     </section>

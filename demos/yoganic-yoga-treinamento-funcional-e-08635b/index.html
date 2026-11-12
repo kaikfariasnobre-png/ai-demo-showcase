@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clínica Dra Laiana Schneider - Clínica You — clinica estetica</title>
+  <title>YogāNic - Yoga, Treinamento Funcional e Corrida em Navegantes — Academia</title>
   <style>
     :root {
-      --primary: #0284c7;
-      --accent: #0d9488;
+      --primary: #2563eb;
+      --accent: #059669;
       --bg: #f8fafc;
       --surface: #ffffff;
       --ink: #0f172a;
@@ -67,8 +67,19 @@
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
     .hero {
-      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/modern-fitness-pilates-studio.jpg') center / cover no-repeat;
       color: #f8fafc;
       padding: 3.5rem 0 3.75rem;
     }
@@ -124,6 +135,10 @@
       border-radius: 16px;
       padding: 1.35rem;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
     }
     .card-index {
       display: inline-block;
@@ -134,6 +149,15 @@
     }
     .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -211,16 +235,16 @@
   </style>
 </head>
 <body>
-  <div class="preview-strip">Preview Personalizado ao Vivo para Clínica Dra Laiana Schneider - Clínica You</div>
+  <div class="preview-strip">Preview Personalizado ao Vivo para YogāNic - Yoga, Treinamento Funcional e Corrida em Navegantes</div>
 
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        Clínica Dra Laiana Schneider - Clínica You
-        <span class="brand-sub">clinica estetica • Balneario Camboriu</span>
+        YogāNic - Yoga, Treinamento Funcional e Corrida em Navegantes
+        <span class="brand-sub">Academia • navegantes</span>
       </div>
-      <a class="btn btn-sm" href="https://wa.me/5547992590331?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Dra%20Laiana%20Schneider%20-%20Cl%C3%ADnica%20You%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-        Agende seu Horario
+      <a class="btn btn-sm" href="#contact">
+        Agende sua Aula
       </a>
     </div>
   </header>
@@ -229,14 +253,17 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="kicker">clinica estetica • Balneario Camboriu</span>
-          <div class="rating-pill">★ 5.0 (107 avaliações no Google)</div>
+          <span class="kicker">Academia • navegantes</span>
+          <div class="rating-pill">★ 5.0 (27 avaliações no Google)</div>
         </div>
-        <h1>Clinica Estetica de Excelencia em Balneario Camboriu</h1>
-        <p>Descubra procedimentos de beleza avancados na Clinica Dra Laiana Schneider - Clinica You. Agende seu horario conosco e transforme seu visual com seguranca.</p>
-        <a class="btn" href="https://wa.me/5547992590331?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Dra%20Laiana%20Schneider%20-%20Cl%C3%ADnica%20You%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-          Agende seu Horario
-        </a>
+        <h1>Transforme sua saúde e bem-estar em Navegantes com YogāNic</h1>
+        <p>Descubra nossas aulas especializadas de yoga, treinamento funcional e corrida na R. Ver. Manoel Fernandes, 219. Conquiste mais qualidade de vida com profissionais dedicados.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">
+            Agende sua Aula
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/Yog%C4%81Nic+-+Yoga,+Treinamento+Funcional+e+Corrida+em+Navegantes/data=!4m7!3m6!1s0x94d8cd63b0d4d37b:0xa267c98b73158165!8m2!3d-26.8994024!4d-48.6502548!16s%2Fg%2F11fj5ldkcj!19sChIJe9PUsGPN2JQRZYEVc4vJZ6I?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
       </div>
     </section>
 
@@ -244,9 +271,9 @@
       <div class="container">
         <h2 id="services-heading">Nossos Serviços</h2>
         <div class="cards-grid">
-          <article class="card"><span class="card-index">01</span><h3>Procedimentos Faciais Avancados</h3><p>Tratamentos dermatologicos e esteticos personalizados para rejuvenescer e cuidar da saude da sua pele.</p></article>
-<article class="card"><span class="card-index">02</span><h3>Harmonizacao e Preenchimento</h3><p>Tecnicas modernas para realcar sua beleza natural com equilibrio e tracos harmoniosos.</p></article>
-<article class="card"><span class="card-index">03</span><h3>Cuidados Corporais Especializados</h3><p>Protocolos modernos focados no bem-estar, melhora do contorno corporal e firmeza da pele.</p></article>
+          <article class="card"><div><span class="card-index">01</span><h3>Aulas de Yoga</h3><p>Práticas focadas em respiração, flexibilidade, equilíbrio e conexão mental para todas as idades e níveis.</p></div></article>
+<article class="card"><div><span class="card-index">02</span><h3>Treinamento Funcional</h3><p>Exercícios dinâmicos que melhoram a força, a resistência e a mobilidade para o seu dia a dia.</p></div></article>
+<article class="card"><div><span class="card-index">03</span><h3>Assessorias de Corrida</h3><p>Orientação profissional para treinos de corrida com foco em desempenho, postura e saúde cardiovascular.</p></div></article>
         </div>
       </div>
     </section>
@@ -254,20 +281,20 @@
     <section id="contact">
       <div class="container split">
         <div class="panel">
-          <h2>Por que escolher Clínica Dra Laiana Schneider - Clínica You</h2>
+          <h2>Por que escolher YogāNic - Yoga, Treinamento Funcional e Corrida em Navegantes</h2>
           <ul class="why-list">
-            <li><span class="check" aria-hidden="true">✓</span><span>Atendimento exclusivo e personalizado em Balneario Camboriu</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Tecnicas modernas e seguras para resultados naturais</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Localizacao de facil acesso na R. 912</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Atendimento personalizado para respeitar os seus limites e objetivos individuais</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Localização privilegiada na R. Ver. Manoel Fernandes, 219, em Navegantes</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Ambiente acolhedor focado no seu desenvolvimento físico e mental</span></li>
           </ul>
         </div>
         <div class="panel">
           <h2>Contato e Localização</h2>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> R. 912, 110 - sala 07</li><li><strong>Telefone:</strong> <a href="tel:47992590331">(47) 99259-0331</a></li>
+            <li><strong>Endereço:</strong> R. Ver. Manoel Fernandes, 219</li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Yog%C4%81Nic+-+Yoga,+Treinamento+Funcional+e+Corrida+em+Navegantes/data=!4m7!3m6!1s0x94d8cd63b0d4d37b:0xa267c98b73158165!8m2!3d-26.8994024!4d-48.6502548!16s%2Fg%2F11fj5ldkcj!19sChIJe9PUsGPN2JQRZYEVc4vJZ6I?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
           </ul>
-          <a class="btn" href="https://wa.me/5547992590331?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Dra%20Laiana%20Schneider%20-%20Cl%C3%ADnica%20You%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-            Agende seu Horario
+          <a class="btn" href="#contact">
+            Agende sua Aula
           </a>
         </div>
       </div>
@@ -277,9 +304,9 @@
       <div class="container">
         <h2 id="faq-heading">Dúvidas Frequentes</h2>
         <div class="faq-stack">
-          <details class="faq-item"><summary>Onde a clinica esta localizada?</summary><p>Estamos localizados na R. 912, 110 - sala 07, em Balneario Camboriu.</p></details>
-<details class="faq-item"><summary>Como posso agendar um procedimento?</summary><p>Voce pode entrar em contato diretamente pelo nosso telefone (47) 99259-0331 para marcar sua avaliacao.</p></details>
-<details class="faq-item"><summary>Os procedimentos sao personalizados?</summary><p>Sim, cada tratamento e indicado apos uma avaliacao detalhada para atender as suas necessidades especificas.</p></details>
+          <details class="faq-item"><summary>Como faço para agendar uma aula experimental?</summary><p>Você pode entrar em contato conosco diretamente pelo WhatsApp para verificar os horários disponíveis e garantir sua vaga.</p></details>
+<details class="faq-item"><summary>Preciso ter experiência prévia em yoga ou treinamento funcional?</summary><p>Não. Nossas aulas são adaptadas para iniciantes e praticantes avançados, sempre com acompanhamento profissional.</p></details>
+<details class="faq-item"><summary>Onde a YogāNic está localizada?</summary><p>Estamos localizados na R. Ver. Manoel Fernandes, 219, na cidade de Navegantes.</p></details>
         </div>
       </div>
     </section>
@@ -287,10 +314,10 @@
 
   <footer>
     <div class="container">
-      <strong>Clínica Dra Laiana Schneider - Clínica You</strong> — Preview demonstrativo criado exclusivamente para Clínica Dra Laiana Schneider - Clínica You.
+      <strong>YogāNic - Yoga, Treinamento Funcional e Corrida em Navegantes</strong> — Preview demonstrativo criado exclusivamente para YogāNic - Yoga, Treinamento Funcional e Corrida em Navegantes.
     </div>
   </footer>
 
-  <a class="floating-wa" href="https://wa.me/5547992590331?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Dra%20Laiana%20Schneider%20-%20Cl%C3%ADnica%20You%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Agende seu Horario">Agende seu Horario</a>
+  
 </body>
 </html>

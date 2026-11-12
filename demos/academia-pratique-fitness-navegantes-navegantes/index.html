@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academia Pratique Fitness - Navegantes — academia</title>
+  <title>Academia Pratique Fitness - Navegantes — Academia</title>
   <style>
     :root {
       --primary: #2563eb;
@@ -67,8 +67,19 @@
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
     .hero {
-      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/modern-fitness-pilates-studio.jpg') center / cover no-repeat;
       color: #f8fafc;
       padding: 3.5rem 0 3.75rem;
     }
@@ -124,6 +135,10 @@
       border-radius: 16px;
       padding: 1.35rem;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
     }
     .card-index {
       display: inline-block;
@@ -134,6 +149,15 @@
     }
     .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -217,10 +241,10 @@
     <div class="container header-inner">
       <div class="brand">
         Academia Pratique Fitness - Navegantes
-        <span class="brand-sub">academia • navegantes</span>
+        <span class="brand-sub">Academia • navegantes</span>
       </div>
       <a class="btn btn-sm" href="#contact">
-        Fale Conosco
+        Fale Conosco no WhatsApp
       </a>
     </div>
   </header>
@@ -229,14 +253,17 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="kicker">academia • navegantes</span>
+          <span class="kicker">Academia • navegantes</span>
           <div class="rating-pill">★ 4.9 (1044 avaliações no Google)</div>
         </div>
-        <h1>Transforme Seu Corpo na Academia Pratique Fitness em Navegantes</h1>
-        <p>Descubra a melhor estrutura de musculação e treinos da região na Av. Santos Dumont, 202. Comece hoje mesmo sua jornada rumo a uma vida mais saudável.</p>
-        <a class="btn" href="#contact">
-          Fale Conosco
-        </a>
+        <h1>Transforme Seu Corpo na Academia Pratique Fitness - Navegantes</h1>
+        <p>Supere seus limites com estrutura completa, equipamentos modernos e acompanhamento profissional em Navegantes.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">
+            Fale Conosco no WhatsApp
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/Academia+Pratique+Fitness+-+Navegantes/data=!4m7!3m6!1s0x94d8cd87c229f075:0x7fa91f6e40609e32!8m2!3d-26.8982904!4d-48.6553565!16s%2Fg%2F11vdqpyrkb!19sChIJdfApwofN2JQRMp5gQG4fqX8?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
       </div>
     </section>
 
@@ -244,9 +271,10 @@
       <div class="container">
         <h2 id="services-heading">Nossos Serviços</h2>
         <div class="cards-grid">
-          <article class="card"><span class="card-index">01</span><h3>Musculação Completa</h3><p>Equipamentos modernos e variados para todos os níveis de condicionamento físico, do iniciante ao avançado.</p></article>
-<article class="card"><span class="card-index">02</span><h3>Treinamento Personalizado</h3><p>Orientação profissional para garantir que você atinja seus objetivos de ganho de massa ou emagrecimento com segurança.</p></article>
-<article class="card"><span class="card-index">03</span><h3>Aulas Coletivas Dinâmicas</h3><p>Modalidades energizantes para manter você motivado e queimar calorias em um ambiente divertido.</p></article>
+          <article class="card"><div><span class="card-index">01</span><h3>Musculação Completa</h3><p>Área de pesos livres e máquinas modernas para ganho de massa muscular e tonificação.</p></div></article>
+<article class="card"><div><span class="card-index">02</span><h3>Treinamento Funcional</h3><p>Exercícios dinâmicos focados em agilidade, força e condicionamento físico geral.</p></div></article>
+<article class="card"><div><span class="card-index">03</span><h3>Aulas Coletivas</h3><p>Modalidades energéticas para você quebrar a rotina e queimar calorias em grupo.</p></div></article>
+<article class="card"><div><span class="card-index">04</span><h3>Avaliação Física</h3><p>Acompanhamento profissional detalhado para monitorar sua evolução e metas.</p></div></article>
         </div>
       </div>
     </section>
@@ -256,18 +284,18 @@
         <div class="panel">
           <h2>Por que escolher Academia Pratique Fitness - Navegantes</h2>
           <ul class="why-list">
-            <li><span class="check" aria-hidden="true">✓</span><span>Localização privilegiada na Av. Santos Dumont, 202</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Equipamentos de alta qualidade para o seu treino</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Ambiente motivador e focado em resultados</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Localização privilegiada na Av. Santos Dumont, 202 em Navegantes</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Equipamentos modernos para otimizar o seu treino diário</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Ambiente motivador e focado em resultados reais</span></li>
           </ul>
         </div>
         <div class="panel">
           <h2>Contato e Localização</h2>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> Av. Santos Dumont, 202</li>
+            <li><strong>Endereço:</strong> Av. Santos Dumont, 202</li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Academia+Pratique+Fitness+-+Navegantes/data=!4m7!3m6!1s0x94d8cd87c229f075:0x7fa91f6e40609e32!8m2!3d-26.8982904!4d-48.6553565!16s%2Fg%2F11vdqpyrkb!19sChIJdfApwofN2JQRMp5gQG4fqX8?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
           </ul>
           <a class="btn" href="#contact">
-            Fale Conosco
+            Fale Conosco no WhatsApp
           </a>
         </div>
       </div>
@@ -277,9 +305,9 @@
       <div class="container">
         <h2 id="faq-heading">Dúvidas Frequentes</h2>
         <div class="faq-stack">
-          <details class="faq-item"><summary>Quais são os horários de funcionamento?</summary><p>Entre em contato conosco para saber os horários detalhados da nossa unidade e encontre o melhor momento para o seu treino.</p></details>
-<details class="faq-item"><summary>Como faço para me matricular?</summary><p>Você pode nos visitar diretamente na Av. Santos Dumont, 202 ou entrar em contato para iniciar sua inscrição de forma rápida.</p></details>
-<details class="faq-item"><summary>Quais modalidades são oferecidas?</summary><p>Oferecemos musculação completa e suporte profissional adequado para ajudar você a alcançar seus objetivos de saúde e bem-estar.</p></details>
+          <details class="faq-item"><summary>Como faço para me matricular na academia?</summary><p>Você pode entrar em contato conosco diretamente pelo WhatsApp para conhecer nossos planos e iniciar seus treinos.</p></details>
+<details class="faq-item"><summary>Quais modalidades estão inclusas no plano?</summary><p>Oferecemos acesso completo à nossa estrutura de musculação e acompanhamento profissional para todos os alunos.</p></details>
+<details class="faq-item"><summary>Onde a academia está localizada?</summary><p>Estamos localizados na Av. Santos Dumont, 202, em Navegantes, prontos para receber você.</p></details>
         </div>
       </div>
     </section>

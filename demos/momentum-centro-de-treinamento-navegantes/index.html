@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Momentum Centro de Treinamento — academia</title>
+  <title>Momentum Centro de Treinamento — Academia</title>
   <style>
     :root {
       --primary: #2563eb;
@@ -67,8 +67,19 @@
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
     .hero {
-      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/modern-fitness-pilates-studio.jpg') center / cover no-repeat;
       color: #f8fafc;
       padding: 3.5rem 0 3.75rem;
     }
@@ -124,6 +135,10 @@
       border-radius: 16px;
       padding: 1.35rem;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
     }
     .card-index {
       display: inline-block;
@@ -134,6 +149,15 @@
     }
     .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -217,10 +241,10 @@
     <div class="container header-inner">
       <div class="brand">
         Momentum Centro de Treinamento
-        <span class="brand-sub">academia • Navegantes</span>
+        <span class="brand-sub">Academia • Navegantes</span>
       </div>
       <a class="btn btn-sm" href="https://wa.me/5547984809729?text=Ol%C3%A1%2C%20Momentum%20Centro%20de%20Treinamento%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-        Agendar no WhatsApp
+        Fale Conosco pelo WhatsApp
       </a>
     </div>
   </header>
@@ -229,14 +253,17 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="kicker">academia • Navegantes</span>
+          <span class="kicker">Academia • Navegantes</span>
           <div class="rating-pill">★ 5.0 (84 avaliações no Google)</div>
         </div>
-        <h1>Momentum Centro de Treinamento: Atendimento Ágil em Navegantes</h1>
-        <p>Especialistas em academia em Navegantes. Tire dúvidas, consulte horários e solicite atendimento direto pelo WhatsApp em segundos.</p>
-        <a class="btn" href="https://wa.me/5547984809729?text=Ol%C3%A1%2C%20Momentum%20Centro%20de%20Treinamento%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-          Agendar no WhatsApp
-        </a>
+        <h1>Transforme sua performance com o Momentum Centro de Treinamento em Navegantes</h1>
+        <p>Treinamento especializado para elevar o seu condicionamento físico e alcançar resultados reais. Venha conhecer nossa estrutura e dar o próximo passo na sua jornada.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/5547984809729?text=Ol%C3%A1%2C%20Momentum%20Centro%20de%20Treinamento%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+            Fale Conosco pelo WhatsApp
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/Momentum+Centro+de+Treinamento/data=!4m7!3m6!1s0x94d8cd11534cb625:0x5f01d8edda03bfcd!8m2!3d-26.8999883!4d-48.6475622!16s%2Fg%2F11syfm6k6h!19sChIJJbZMUxHN2JQRzb8D2u3YAV8?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
       </div>
     </section>
 
@@ -244,9 +271,9 @@
       <div class="container">
         <h2 id="services-heading">Nossos Serviços</h2>
         <div class="cards-grid">
-          <article class="card"><span class="card-index">01</span><h3>academia Sob Medida</h3><p>Atendimento estruturado e explicações objetivas para quem busca academia em Navegantes.</p></article>
-<article class="card"><span class="card-index">02</span><h3>Agendamento Direto no WhatsApp</h3><p>Fale rapidamente com a equipe sem formulários longos nem espera em ligação.</p></article>
-<article class="card"><span class="card-index">03</span><h3>Orientação Clara Antes da Visita</h3><p>Esclareça dúvidas sobre disponibilidade, preparo e localização em um só lugar.</p></article>
+          <article class="card"><div><span class="card-index">01</span><h3>Musculação e Condicionamento</h3><p>Treinos personalizados com acompanhamento profissional para ganho de força e definição muscular com total segurança.</p></div><a class="card-link" href="https://wa.me/5547984809729?text=Ol%C3%A1%2C%20Momentum%20Centro%20de%20Treinamento%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Muscula%C3%A7%C3%A3o%20e%20Condicionamento." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">02</span><h3>Treinamento Funcional</h3><p>Exercícios dinâmicos que melhoram a mobilidade, agilidade e o condicionamento para as atividades do dia a dia.</p></div><a class="card-link" href="https://wa.me/5547984809729?text=Ol%C3%A1%2C%20Momentum%20Centro%20de%20Treinamento%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Treinamento%20Funcional." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">03</span><h3>Avaliação Física Completa</h3><p>Análise detalhada da composição corporal para direcionar seus treinos com foco nos seus objetivos individuais.</p></div><a class="card-link" href="https://wa.me/5547984809729?text=Ol%C3%A1%2C%20Momentum%20Centro%20de%20Treinamento%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Avalia%C3%A7%C3%A3o%20F%C3%ADsica%20Completa." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
         </div>
       </div>
     </section>
@@ -256,18 +283,18 @@
         <div class="panel">
           <h2>Por que escolher Momentum Centro de Treinamento</h2>
           <ul class="why-list">
-            <li><span class="check" aria-hidden="true">✓</span><span>Foco em academia em Navegantes com navegação simples no celular</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Contato em 1 toque para orçamento e verificação de horários</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Informações essenciais organizadas para gerar confiança imediata</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Profissionais altamente capacitados e focados na sua evolução</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Ambiente motivador e estruturado para todos os níveis de condicionamento</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Localização privilegiada na Av. Pref. José Juvenal Mafra em Navegantes</span></li>
           </ul>
         </div>
         <div class="panel">
           <h2>Contato e Localização</h2>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> Av. Pref. José Juvenal Mafra, 188</li><li><strong>Telefone:</strong> <a href="tel:047984809729">047984809729</a></li><li><strong>Instagram:</strong> <a href="https://instagram.com/momentum.ct" target="_blank" rel="noopener noreferrer">https://instagram.com/momentum.ct</a></li><li><strong>Site Atual:</strong> <a href="https://www.instagram.com/momentum.ct" target="_blank" rel="noopener noreferrer">https://www.instagram.com/momentum.ct</a></li>
+            <li><strong>Endereço:</strong> Av. Pref. José Juvenal Mafra, 188</li><li><strong>Telefone:</strong> <a href="tel:047984809729">047984809729</a></li><li><strong>Instagram:</strong> <a href="https://instagram.com/momentum.ct" target="_blank" rel="noopener noreferrer">https://instagram.com/momentum.ct</a></li><li><strong>Site Atual:</strong> <a href="https://www.instagram.com/momentum.ct" target="_blank" rel="noopener noreferrer">https://www.instagram.com/momentum.ct</a></li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Momentum+Centro+de+Treinamento/data=!4m7!3m6!1s0x94d8cd11534cb625:0x5f01d8edda03bfcd!8m2!3d-26.8999883!4d-48.6475622!16s%2Fg%2F11syfm6k6h!19sChIJJbZMUxHN2JQRzb8D2u3YAV8?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
           </ul>
           <a class="btn" href="https://wa.me/5547984809729?text=Ol%C3%A1%2C%20Momentum%20Centro%20de%20Treinamento%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-            Agendar no WhatsApp
+            Fale Conosco pelo WhatsApp
           </a>
         </div>
       </div>
@@ -277,9 +304,9 @@
       <div class="container">
         <h2 id="faq-heading">Dúvidas Frequentes</h2>
         <div class="faq-stack">
-          <details class="faq-item"><summary>Como faço para agendar na Momentum Centro de Treinamento?</summary><p>Clique no botão de WhatsApp nesta página para iniciar o atendimento e verificar horários disponíveis.</p></details>
-<details class="faq-item"><summary>O atendimento funciona bem pelo celular?</summary><p>Sim, todo o contato é direto pelo WhatsApp para facilitar seu retorno sem burocracia.</p></details>
-<details class="faq-item"><summary>Qual a localização de atendimento?</summary><p>Atendemos em Av. Pref. José Juvenal Mafra, 188.</p></details>
+          <details class="faq-item"><summary>Como faço para começar a treinar no Momentum Centro de Treinamento?</summary><p>Basta entrar em contato conosco pelo WhatsApp para agendar sua visita, conhecer nossa estrutura e iniciar seus treinos.</p></details>
+<details class="faq-item"><summary>Os treinos são adaptados para iniciantes?</summary><p>Sim, todos os nossos programas de treinamento são individualizados e adaptados para atender desde iniciantes até atletas avançados.</p></details>
+<details class="faq-item"><summary>Qual é o endereço da academia em Navegantes?</summary><p>Estamos localizados na Av. Pref. José Juvenal Mafra, 188, em Navegantes. Venha nos fazer uma visita!</p></details>
         </div>
       </div>
     </section>
@@ -291,6 +318,6 @@
     </div>
   </footer>
 
-  <a class="floating-wa" href="https://wa.me/5547984809729?text=Ol%C3%A1%2C%20Momentum%20Centro%20de%20Treinamento%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Agendar no WhatsApp">Agendar no WhatsApp</a>
+  <a class="floating-wa" href="https://wa.me/5547984809729?text=Ol%C3%A1%2C%20Momentum%20Centro%20de%20Treinamento%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Fale Conosco pelo WhatsApp">Fale Conosco pelo WhatsApp</a>
 </body>
 </html>

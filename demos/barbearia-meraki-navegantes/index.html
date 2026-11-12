@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barbearia Meraki — barbearia</title>
+  <title>Barbearia Meraki — Barbearia</title>
   <style>
     :root {
       --primary: #2563eb;
@@ -67,8 +67,19 @@
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
     .hero {
-      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/modern-barber-shop-interior.jpg') center / cover no-repeat;
       color: #f8fafc;
       padding: 3.5rem 0 3.75rem;
     }
@@ -124,6 +135,10 @@
       border-radius: 16px;
       padding: 1.35rem;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
     }
     .card-index {
       display: inline-block;
@@ -134,6 +149,15 @@
     }
     .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -217,10 +241,10 @@
     <div class="container header-inner">
       <div class="brand">
         Barbearia Meraki
-        <span class="brand-sub">barbearia • Navegantes</span>
+        <span class="brand-sub">Barbearia • Navegantes</span>
       </div>
       <a class="btn btn-sm" href="#contact">
-        Agendar no WhatsApp
+        Agendar Horário
       </a>
     </div>
   </header>
@@ -229,14 +253,17 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="kicker">barbearia • Navegantes</span>
+          <span class="kicker">Barbearia • Navegantes</span>
           <div class="rating-pill">★ 5.0 (25 avaliações no Google)</div>
         </div>
-        <h1>Barbearia Meraki: Atendimento Ágil em Navegantes</h1>
-        <p>Especialistas em barbearia em Navegantes. Tire dúvidas, consulte horários e solicite atendimento direto pelo WhatsApp em segundos.</p>
-        <a class="btn" href="#contact">
-          Agendar no WhatsApp
-        </a>
+        <h1>Estilo e Tradição na Barbearia Meraki em Navegantes</h1>
+        <p>Cortes modernos, barba impecável e um ambiente exclusivo para homens que valorizam o próprio visual. Agende seu horário conosco hoje mesmo.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">
+            Agendar Horário
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/Barbearia+Meraki/data=!4m7!3m6!1s0x94d8cdf85507a58d:0x4b7a8faef097c562!8m2!3d-26.9006565!4d-48.6486595!16s%2Fg%2F11ykl2twt6!19sChIJjaUHVfjN2JQRYsWX8K6Peks?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
       </div>
     </section>
 
@@ -244,9 +271,9 @@
       <div class="container">
         <h2 id="services-heading">Nossos Serviços</h2>
         <div class="cards-grid">
-          <article class="card"><span class="card-index">01</span><h3>barbearia Sob Medida</h3><p>Atendimento estruturado e explicações objetivas para quem busca barbearia em Navegantes.</p></article>
-<article class="card"><span class="card-index">02</span><h3>Agendamento Direto no WhatsApp</h3><p>Fale rapidamente com a equipe sem formulários longos nem espera em ligação.</p></article>
-<article class="card"><span class="card-index">03</span><h3>Orientação Clara Antes da Visita</h3><p>Esclareça dúvidas sobre disponibilidade, preparo e localização em um só lugar.</p></article>
+          <article class="card"><div><span class="card-index">01</span><h3>Corte de Cabelo Masculino</h3><p>Cortes clássicos e modernos adaptados ao seu estilo com acabamento perfeito.</p></div></article>
+<article class="card"><div><span class="card-index">02</span><h3>Barba Completa</h3><p>Modelagem, hidratação e toalha quente para um barbear tradicional e relaxante.</p></div></article>
+<article class="card"><div><span class="card-index">03</span><h3>Combo Corte e Barba</h3><p>O pacote completo para manter seu visual alinhado e renovado com economia.</p></div></article>
         </div>
       </div>
     </section>
@@ -256,18 +283,18 @@
         <div class="panel">
           <h2>Por que escolher Barbearia Meraki</h2>
           <ul class="why-list">
-            <li><span class="check" aria-hidden="true">✓</span><span>Foco em barbearia em Navegantes com navegação simples no celular</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Contato em 1 toque para orçamento e verificação de horários</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Informações essenciais organizadas para gerar confiança imediata</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Profissionais especializados e focados em excelência</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Atendimento personalizado em Navegantes</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Ambiente confortável e pensado para o seu bem-estar</span></li>
           </ul>
         </div>
         <div class="panel">
           <h2>Contato e Localização</h2>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> R. Paulina Borba Vieira, 95</li><li><strong>Site Atual:</strong> <a href="https://sites.appbarber.com.br/merakibarbearia-rh6d?source=google_reserve&amp;rwg_token=ALcMQYYvj1lA3Nx64HUiorDMyGAHEgXjL5iYO6dKGTIigdtOntVaV59dLZdMX7Ybe3K1kCgTjAR7XAFefRR3AN-2r3efvVaQrg%3D%3D" target="_blank" rel="noopener noreferrer">https://sites.appbarber.com.br/merakibarbearia-rh6d?source=google_reserve&amp;rwg_token=ALcMQYYvj1lA3Nx64HUiorDMyGAHEgXjL5iYO6dKGTIigdtOntVaV59dLZdMX7Ybe3K1kCgTjAR7XAFefRR3AN-2r3efvVaQrg%3D%3D</a></li>
+            <li><strong>Endereço:</strong> R. Paulina Borba Vieira, 95</li><li><strong>Site Atual:</strong> <a href="https://sites.appbarber.com.br/merakibarbearia-rh6d?source=google_reserve&amp;rwg_token=ALcMQYYvj1lA3Nx64HUiorDMyGAHEgXjL5iYO6dKGTIigdtOntVaV59dLZdMX7Ybe3K1kCgTjAR7XAFefRR3AN-2r3efvVaQrg%3D%3D" target="_blank" rel="noopener noreferrer">https://sites.appbarber.com.br/merakibarbearia-rh6d?source=google_reserve&amp;rwg_token=ALcMQYYvj1lA3Nx64HUiorDMyGAHEgXjL5iYO6dKGTIigdtOntVaV59dLZdMX7Ybe3K1kCgTjAR7XAFefRR3AN-2r3efvVaQrg%3D%3D</a></li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Barbearia+Meraki/data=!4m7!3m6!1s0x94d8cdf85507a58d:0x4b7a8faef097c562!8m2!3d-26.9006565!4d-48.6486595!16s%2Fg%2F11ykl2twt6!19sChIJjaUHVfjN2JQRYsWX8K6Peks?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
           </ul>
           <a class="btn" href="#contact">
-            Agendar no WhatsApp
+            Agendar Horário
           </a>
         </div>
       </div>
@@ -277,9 +304,9 @@
       <div class="container">
         <h2 id="faq-heading">Dúvidas Frequentes</h2>
         <div class="faq-stack">
-          <details class="faq-item"><summary>Como faço para agendar na Barbearia Meraki?</summary><p>Clique no botão de WhatsApp nesta página para iniciar o atendimento e verificar horários disponíveis.</p></details>
-<details class="faq-item"><summary>O atendimento funciona bem pelo celular?</summary><p>Sim, todo o contato é direto pelo WhatsApp para facilitar seu retorno sem burocracia.</p></details>
-<details class="faq-item"><summary>Qual a localização de atendimento?</summary><p>Atendemos em R. Paulina Borba Vieira, 95.</p></details>
+          <details class="faq-item"><summary>Como faço para agendar um horário?</summary><p>Você pode entrar em contato diretamente pelo nosso canal de atendimento para verificar os horários disponíveis.</p></details>
+<details class="faq-item"><summary>Onde a Barbearia Meraki está localizada?</summary><p>Estamos localizados na R. Paulina Borba Vieira, 95, em Navegantes.</p></details>
+<details class="faq-item"><summary>Quais serviços de barbearia são oferecidos?</summary><p>Oferecemos serviços completos de corte de cabelo masculino e cuidados com a barba.</p></details>
         </div>
       </div>
     </section>

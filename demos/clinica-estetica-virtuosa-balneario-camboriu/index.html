@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clínica Estética Virtuosa — clinica estetica</title>
+  <title>Clínica Estética Virtuosa — Clinica Estetica</title>
   <style>
     :root {
       --primary: #0284c7;
@@ -67,8 +67,19 @@
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
     .hero {
-      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/luxury-facial-spa-skincare.jpg') center / cover no-repeat;
       color: #f8fafc;
       padding: 3.5rem 0 3.75rem;
     }
@@ -124,6 +135,10 @@
       border-radius: 16px;
       padding: 1.35rem;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
     }
     .card-index {
       display: inline-block;
@@ -134,6 +149,15 @@
     }
     .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -217,10 +241,10 @@
     <div class="container header-inner">
       <div class="brand">
         Clínica Estética Virtuosa
-        <span class="brand-sub">clinica estetica • Balneario Camboriu</span>
+        <span class="brand-sub">Clinica Estetica • Balneario Camboriu</span>
       </div>
       <a class="btn btn-sm" href="https://wa.me/5547991302466?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Est%C3%A9tica%20Virtuosa%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-        Agendar no WhatsApp
+        Agende sua Avaliação
       </a>
     </div>
   </header>
@@ -229,14 +253,17 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="kicker">clinica estetica • Balneario Camboriu</span>
+          <span class="kicker">Clinica Estetica • Balneario Camboriu</span>
           <div class="rating-pill">★ 4.3 (198 avaliações no Google)</div>
         </div>
-        <h1>Clínica Estética Virtuosa: Atendimento Ágil em Balneario Camboriu</h1>
-        <p>Especialistas em clinica estetica em Balneario Camboriu. Tire dúvidas, consulte horários e solicite atendimento direto pelo WhatsApp em segundos.</p>
-        <a class="btn" href="https://wa.me/5547991302466?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Est%C3%A9tica%20Virtuosa%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-          Agendar no WhatsApp
-        </a>
+        <h1>Transforme sua autoestima na Clínica Estética Virtuosa em Balneário Camboriú</h1>
+        <p>Descubra procedimentos estéticos avançados e personalizados para realçar sua beleza natural com total segurança e conforto.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/5547991302466?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Est%C3%A9tica%20Virtuosa%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+            Agende sua Avaliação
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/Cl%C3%ADnica+Est%C3%A9tica+Virtuosa/data=!4m7!3m6!1s0x94d8b7e06200254b:0x2dbf86df3f7102c9!8m2!3d-26.9994958!4d-48.6353963!16s%2Fg%2F11fnvswf1_!19sChIJSyUAYuC32JQRyQJxP9-Gvy0?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
       </div>
     </section>
 
@@ -244,9 +271,9 @@
       <div class="container">
         <h2 id="services-heading">Nossos Serviços</h2>
         <div class="cards-grid">
-          <article class="card"><span class="card-index">01</span><h3>clinica estetica Sob Medida</h3><p>Atendimento estruturado e explicações objetivas para quem busca clinica estetica em Balneario Camboriu.</p></article>
-<article class="card"><span class="card-index">02</span><h3>Agendamento Direto no WhatsApp</h3><p>Fale rapidamente com a equipe sem formulários longos nem espera em ligação.</p></article>
-<article class="card"><span class="card-index">03</span><h3>Orientação Clara Antes da Visita</h3><p>Esclareça dúvidas sobre disponibilidade, preparo e localização em um só lugar.</p></article>
+          <article class="card"><div><span class="card-index">01</span><h3>Limpeza de Pele Profunda</h3><p>Remoção de impurezas, desobstrução de poros e renovação celular para uma pele saudável e radiante.</p></div><a class="card-link" href="https://wa.me/5547991302466?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Est%C3%A9tica%20Virtuosa%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Limpeza%20de%20Pele%20Profunda." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">02</span><h3>Tratamentos Faciais Avançados</h3><p>Protocolos exclusivos focados no rejuvenescimento, hidratação profunda e tratamento de manchas.</p></div><a class="card-link" href="https://wa.me/5547991302466?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Est%C3%A9tica%20Virtuosa%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Tratamentos%20Faciais%20Avan%C3%A7ados." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">03</span><h3>Estética Corporal Redutora</h3><p>Técnicas modernas e eficazes para modelar o corpo, combater a flacidez e reduzir medidas.</p></div><a class="card-link" href="https://wa.me/5547991302466?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Est%C3%A9tica%20Virtuosa%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Est%C3%A9tica%20Corporal%20Redutora." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
         </div>
       </div>
     </section>
@@ -256,18 +283,18 @@
         <div class="panel">
           <h2>Por que escolher Clínica Estética Virtuosa</h2>
           <ul class="why-list">
-            <li><span class="check" aria-hidden="true">✓</span><span>Foco em clinica estetica em Balneario Camboriu com navegação simples no celular</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Contato em 1 toque para orçamento e verificação de horários</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Informações essenciais organizadas para gerar confiança imediata</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Atendimento totalmente personalizado para cada tipo de pele e necessidade</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Localização privilegiada no Centro de Balneário Camboriú</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Profissionais dedicados a entregar resultados com segurança e excelência</span></li>
           </ul>
         </div>
         <div class="panel">
           <h2>Contato e Localização</h2>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> Rua: 2500, 930 Centro</li><li><strong>Telefone:</strong> <a href="tel:47991302466">(47) 99130-2466</a></li>
+            <li><strong>Endereço:</strong> Rua: 2500, 930 Centro</li><li><strong>Telefone:</strong> <a href="tel:47991302466">(47) 99130-2466</a></li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Cl%C3%ADnica+Est%C3%A9tica+Virtuosa/data=!4m7!3m6!1s0x94d8b7e06200254b:0x2dbf86df3f7102c9!8m2!3d-26.9994958!4d-48.6353963!16s%2Fg%2F11fnvswf1_!19sChIJSyUAYuC32JQRyQJxP9-Gvy0?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
           </ul>
           <a class="btn" href="https://wa.me/5547991302466?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Est%C3%A9tica%20Virtuosa%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-            Agendar no WhatsApp
+            Agende sua Avaliação
           </a>
         </div>
       </div>
@@ -277,9 +304,9 @@
       <div class="container">
         <h2 id="faq-heading">Dúvidas Frequentes</h2>
         <div class="faq-stack">
-          <details class="faq-item"><summary>Como faço para agendar na Clínica Estética Virtuosa?</summary><p>Clique no botão de WhatsApp nesta página para iniciar o atendimento e verificar horários disponíveis.</p></details>
-<details class="faq-item"><summary>O atendimento funciona bem pelo celular?</summary><p>Sim, todo o contato é direto pelo WhatsApp para facilitar seu retorno sem burocracia.</p></details>
-<details class="faq-item"><summary>Qual a localização de atendimento?</summary><p>Atendemos em Rua: 2500, 930 Centro.</p></details>
+          <details class="faq-item"><summary>Onde a Clínica Estética Virtuosa está localizada?</summary><p>Estamos localizados na Rua: 2500, 930 no Centro de Balneário Camboriú.</p></details>
+<details class="faq-item"><summary>Como posso agendar um procedimento estético?</summary><p>Você pode entrar em contato conosco diretamente pelo telefone (47) 99130-2466 para agendar sua avaliação.</p></details>
+<details class="faq-item"><summary>Os tratamentos são indicados para todos os tipos de pele?</summary><p>Sim, realizamos uma avaliação prévia detalhada para indicar o protocolo ideal para as suas necessidades.</p></details>
         </div>
       </div>
     </section>
@@ -291,6 +318,6 @@
     </div>
   </footer>
 
-  <a class="floating-wa" href="https://wa.me/5547991302466?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Est%C3%A9tica%20Virtuosa%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Agendar no WhatsApp">Agendar no WhatsApp</a>
+  <a class="floating-wa" href="https://wa.me/5547991302466?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Est%C3%A9tica%20Virtuosa%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Agende sua Avaliação">Agende sua Avaliação</a>
 </body>
 </html>

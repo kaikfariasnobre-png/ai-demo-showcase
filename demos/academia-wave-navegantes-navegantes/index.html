@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academia Wave Navegantes — academia</title>
+  <title>Academia Wave Navegantes — Academia</title>
   <style>
     :root {
       --primary: #2563eb;
@@ -67,8 +67,19 @@
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
     .hero {
-      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/modern-fitness-pilates-studio.jpg') center / cover no-repeat;
       color: #f8fafc;
       padding: 3.5rem 0 3.75rem;
     }
@@ -124,6 +135,10 @@
       border-radius: 16px;
       padding: 1.35rem;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
     }
     .card-index {
       display: inline-block;
@@ -134,6 +149,15 @@
     }
     .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -217,7 +241,7 @@
     <div class="container header-inner">
       <div class="brand">
         Academia Wave Navegantes
-        <span class="brand-sub">academia • Navegantes</span>
+        <span class="brand-sub">Academia • Navegantes</span>
       </div>
       <a class="btn btn-sm" href="#contact">
         Fale Conosco no WhatsApp
@@ -229,14 +253,17 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="kicker">academia • Navegantes</span>
+          <span class="kicker">Academia • Navegantes</span>
           <div class="rating-pill">★ 4.6 (229 avaliações no Google)</div>
         </div>
         <h1>Transforme Seu Corpo na Academia Wave Navegantes</h1>
-        <p>Descubra a estrutura completa que preparamos para você em Navegantes. Treine com foco, qualidade e conte com profissionais dedicados aos seus objetivos.</p>
-        <a class="btn" href="#contact">
-          Fale Conosco no WhatsApp
-        </a>
+        <p>Supere seus limites com treinos especializados, estrutura completa em Navegantes e uma equipe pronta para guiar sua evolução diária.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">
+            Fale Conosco no WhatsApp
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/Academia+Wave+Navegantes/data=!4m7!3m6!1s0x94d8cc1ac0e311d7:0x900a3098e6acec04!8m2!3d-26.8993561!4d-48.6475506!16s%2Fg%2F11bvt3xxfd!19sChIJ1xHjwBrM2JQRBOys5pgwCpA?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
       </div>
     </section>
 
@@ -244,9 +271,9 @@
       <div class="container">
         <h2 id="services-heading">Nossos Serviços</h2>
         <div class="cards-grid">
-          <article class="card"><span class="card-index">01</span><h3>Musculação Completa</h3><p>Equipamentos modernos e espaço adequado para o seu treino de hipertrofia, força e condicionamento físico.</p></article>
-<article class="card"><span class="card-index">02</span><h3>Treinamento Funcional</h3><p>Exercícios dinâmicos voltados para melhorar o agilidade, o equilíbrio e o fortalecimento do core.</p></article>
-<article class="card"><span class="card-index">03</span><h3>Aulas Coletivas</h3><p>Atividades em grupo motivadoras para você que busca queimar calorias e manter a energia lá em cima.</p></article>
+          <article class="card"><div><span class="card-index">01</span><h3>Musculação Completa</h3><p>Equipamentos modernos para hipertrofia, tonificação e condicionamento físico com acompanhamento profissional.</p></div></article>
+<article class="card"><div><span class="card-index">02</span><h3>Treinamento Funcional</h3><p>Exercícios dinâmicos focados em agilidade, força e resistência para o seu dia a dia.</p></div></article>
+<article class="card"><div><span class="card-index">03</span><h3>Aulas Coletivas</h3><p>Atividades em grupo motivantes para queimar calorias e manter a energia lá no alto.</p></div></article>
         </div>
       </div>
     </section>
@@ -256,15 +283,15 @@
         <div class="panel">
           <h2>Por que escolher Academia Wave Navegantes</h2>
           <ul class="why-list">
-            <li><span class="check" aria-hidden="true">✓</span><span>Ambiente agradável e seguro localizado em Navegantes</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Equipamentos de qualidade para todos os níveis de condicionamento</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Atendimento focado em ajudar você a alcançar suas metas</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Localização privilegiada na Av. Pref. José Juvenal Mafra</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Ambiente motivador e focado em resultados reais</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Profissionais capacitados para o seu suporte</span></li>
           </ul>
         </div>
         <div class="panel">
           <h2>Contato e Localização</h2>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> Av. Pref. José Juvenal Mafra, 250</li>
+            <li><strong>Endereço:</strong> Av. Pref. José Juvenal Mafra, 250</li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Academia+Wave+Navegantes/data=!4m7!3m6!1s0x94d8cc1ac0e311d7:0x900a3098e6acec04!8m2!3d-26.8993561!4d-48.6475506!16s%2Fg%2F11bvt3xxfd!19sChIJ1xHjwBrM2JQRBOys5pgwCpA?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
           </ul>
           <a class="btn" href="#contact">
             Fale Conosco no WhatsApp
@@ -277,9 +304,9 @@
       <div class="container">
         <h2 id="faq-heading">Dúvidas Frequentes</h2>
         <div class="faq-stack">
-          <details class="faq-item"><summary>Como faço para me matricular na Academia Wave Navegantes?</summary><p>Você pode entrar em contato conosco pelo WhatsApp para tirar dúvidas sobre planos e horários, ou visitar nossa unidade na Av. Pref. José Juvenal Mafra, 250.</p></details>
-<details class="faq-item"><summary>Quais modalidades estão disponíveis na academia?</summary><p>Oferecemos musculação completa, treinamento funcional e aulas coletivas dinâmicas para atender a todos os objetivos.</p></details>
-<details class="faq-item"><summary>A academia é indicada para iniciantes?</summary><p>Sim! Contamos com suporte adequado para orientar alunos que estão começando agora e buscam mais saúde e qualidade de vida.</p></details>
+          <details class="faq-item"><summary>Como faço para me matricular?</summary><p>Você pode entrar em contato diretamente pelo nosso WhatsApp ou nos fazer uma visita na Av. Pref. José Juvenal Mafra, 250.</p></details>
+<details class="faq-item"><summary>Quais modalidades são oferecidas?</summary><p>Oferecemos musculação completa, treinamento funcional e aulas coletivas adaptadas para todos os níveis.</p></details>
+<details class="faq-item"><summary>Preciso ter experiência prévia para começar?</summary><p>Não! Nossos profissionais preparam treinos personalizados de acordo com o seu objetivo e nível de condicionamento.</p></details>
         </div>
       </div>
     </section>

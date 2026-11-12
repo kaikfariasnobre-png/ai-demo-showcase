@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studio Respilates — pilates</title>
+  <title>Studio Respilates — Pilates</title>
   <style>
     :root {
       --primary: #2563eb;
@@ -67,8 +67,19 @@
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
     .hero {
-      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/modern-fitness-pilates-studio.jpg') center / cover no-repeat;
       color: #f8fafc;
       padding: 3.5rem 0 3.75rem;
     }
@@ -124,6 +135,10 @@
       border-radius: 16px;
       padding: 1.35rem;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
     }
     .card-index {
       display: inline-block;
@@ -134,6 +149,15 @@
     }
     .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -217,10 +241,10 @@
     <div class="container header-inner">
       <div class="brand">
         Studio Respilates
-        <span class="brand-sub">pilates • Joinville</span>
+        <span class="brand-sub">Pilates • Joinville</span>
       </div>
       <a class="btn btn-sm" href="#contact">
-        Agende sua aula no WhatsApp
+        Agende sua Aula
       </a>
     </div>
   </header>
@@ -229,14 +253,17 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="kicker">pilates • Joinville</span>
+          <span class="kicker">Pilates • Joinville</span>
           <div class="rating-pill">★ 5.0 (26 avaliações no Google)</div>
         </div>
-        <h1>Transforme sua saúde e bem-estar com Pilates em Joinville</h1>
-        <p>Descubra uma experiência única de movimento e qualidade de vida no Studio Respilates. Atendimento personalizado para fortalecer seu corpo e mente.</p>
-        <a class="btn" href="#contact">
-          Agende sua aula no WhatsApp
-        </a>
+        <h1>Transforme sua saúde e bem-estar com o Studio Respilates em Joinville</h1>
+        <p>Aulas de pilates personalizadas para melhorar sua postura, fortalecer o corpo e trazer mais qualidade de vida para o seu dia a dia.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">
+            Agende sua Aula
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/Studio+Respilates/data=!4m7!3m6!1s0x94d8cd1cad64fc07:0x4678fa79b46ec19d!8m2!3d-26.9077428!4d-48.6564116!16s%2Fg%2F11fnr5plwf!19sChIJB_xkrRzN2JQRncFutHn6eEY?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
       </div>
     </section>
 
@@ -244,10 +271,9 @@
       <div class="container">
         <h2 id="services-heading">Nossos Serviços</h2>
         <div class="cards-grid">
-          <article class="card"><span class="card-index">01</span><h3>Aulas de Pilates Clássico e Contemporâneo</h3><p>Exercícios direcionados para fortalecimento muscular, melhora da postura e flexibilidade com acompanhamento dedicado.</p></article>
-<article class="card"><span class="card-index">02</span><h3>Reabilitação Postural e Funcional</h3><p>Programas focados em aliviar dores nas costas, corrigir desvios posturais e recuperar a mobilidade corporal com segurança.</p></article>
-<article class="card"><span class="card-index">03</span><h3>Pilates para Gestantes</h3><p>Acompanhamento especializado para garantir mais conforto, fortalecimento pélvico e bem-estar durante toda a gravidez.</p></article>
-<article class="card"><span class="card-index">04</span><h3>Treinamento Personalizado</h3><p>Sessões individuais ou em duplas adaptadas exatamente aos seus objetivos de condicionamento e saúde.</p></article>
+          <article class="card"><div><span class="card-index">01</span><h3>Pilates Clínico</h3><p>Sessões focadas na reabilitação e alívio de dores na coluna, adaptadas às necessidades individuais de cada aluno.</p></div></article>
+<article class="card"><div><span class="card-index">02</span><h3>Pilates para Gestantes</h3><p>Exercícios seguros e controlados para preparar o corpo durante a gestação, trazendo mais conforto e bem-estar.</p></div></article>
+<article class="card"><div><span class="card-index">03</span><h3>Condicionamento Físico</h3><p>Aulas dinâmicas que unem força, flexibilidade e controle respiratório para otimizar o seu desempenho corporal.</p></div></article>
         </div>
       </div>
     </section>
@@ -257,18 +283,18 @@
         <div class="panel">
           <h2>Por que escolher Studio Respilates</h2>
           <ul class="why-list">
-            <li><span class="check" aria-hidden="true">✓</span><span>Localização privilegiada no Edifício Athon Business, na R. Joinville</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Profissionais altamente qualificados focados no seu desenvolvimento individual</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Ambiente climatizado e totalmente equipado para sua máxima segurança</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Atendimento personalizado e focado em resultados reais para cada aluno.</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Localização privilegiada no Edifício Athon Business, no centro de Joinville.</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Metodologia voltada para o reequilíbrio postural e prevenção de lesões.</span></li>
           </ul>
         </div>
         <div class="panel">
           <h2>Contato e Localização</h2>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> Edifício Athon Business - R. Joinville, 304 - Sl 501</li>
+            <li><strong>Endereço:</strong> Edifício Athon Business - R. Joinville, 304 - Sl 501</li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Studio+Respilates/data=!4m7!3m6!1s0x94d8cd1cad64fc07:0x4678fa79b46ec19d!8m2!3d-26.9077428!4d-48.6564116!16s%2Fg%2F11fnr5plwf!19sChIJB_xkrRzN2JQRncFutHn6eEY?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
           </ul>
           <a class="btn" href="#contact">
-            Agende sua aula no WhatsApp
+            Agende sua Aula
           </a>
         </div>
       </div>
@@ -278,9 +304,9 @@
       <div class="container">
         <h2 id="faq-heading">Dúvidas Frequentes</h2>
         <div class="faq-stack">
-          <details class="faq-item"><summary>Onde fica localizado o Studio Respilates?</summary><p>Estamos situados no Edifício Athon Business, na R. Joinville, 304 - Sl 501, em Joinville.</p></details>
-<details class="faq-item"><summary>Preciso ter experiência prévia para começar?</summary><p>Não! Nossas aulas são adaptadas para todos os níveis, desde iniciantes até praticantes avançados.</p></details>
-<details class="faq-item"><summary>Como posso agendar uma aula experimental?</summary><p>Você pode entrar em contato conosco diretamente pelo nosso WhatsApp para verificar os horários disponíveis.</p></details>
+          <details class="faq-item"><summary>Onde o Studio Respilates está localizado?</summary><p>Estamos localizados no Edifício Athon Business, na R. Joinville, 304 - Sl 501, em Joinville.</p></details>
+<details class="faq-item"><summary>Como posso agendar uma aula experimental?</summary><p>Você pode entrar em contato conosco diretamente pelo nosso canal de atendimento para verificar os horários disponíveis.</p></details>
+<details class="faq-item"><summary>O pilates é indicado para todas as idades?</summary><p>Sim, as aulas são adaptadas conforme a necessidade, faixa etária e objetivo de cada praticante.</p></details>
         </div>
       </div>
     </section>

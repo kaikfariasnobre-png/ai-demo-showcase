@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Santos Auto Center — oficina mecanica</title>
+  <title>Santos Auto Center — Oficina Mecanica</title>
   <style>
     :root {
       --primary: #2563eb;
@@ -67,8 +67,19 @@
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
     .hero {
-      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/modern-small-business-interior.jpg') center / cover no-repeat;
       color: #f8fafc;
       padding: 3.5rem 0 3.75rem;
     }
@@ -124,6 +135,10 @@
       border-radius: 16px;
       padding: 1.35rem;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
     }
     .card-index {
       display: inline-block;
@@ -134,6 +149,15 @@
     }
     .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -217,10 +241,10 @@
     <div class="container header-inner">
       <div class="brand">
         Santos Auto Center
-        <span class="brand-sub">oficina mecanica • Blumenau</span>
+        <span class="brand-sub">Oficina Mecanica • Blumenau</span>
       </div>
       <a class="btn btn-sm" href="https://wa.me/554732377867?text=Ol%C3%A1%2C%20Santos%20Auto%20Center%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-        Agendar Serviço no WhatsApp
+        Fale Conosco no WhatsApp
       </a>
     </div>
   </header>
@@ -229,14 +253,17 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="kicker">oficina mecanica • Blumenau</span>
+          <span class="kicker">Oficina Mecanica • Blumenau</span>
           <div class="rating-pill">★ 4.8 (188 avaliações no Google)</div>
         </div>
-        <h1>Manutenção Automotiva de Confiança em Blumenau</h1>
-        <p>No Santos Auto Center, cuidamos do seu veículo com total transparência, profissionais qualificados e tecnologia de ponta para garantir a sua segurança na estrada.</p>
-        <a class="btn" href="https://wa.me/554732377867?text=Ol%C3%A1%2C%20Santos%20Auto%20Center%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-          Agendar Serviço no WhatsApp
-        </a>
+        <h1>Excelencia em Mecanica Automotiva em Blumenau</h1>
+        <p>Na Santos Auto Center, cuidamos do seu veiculo com total transparencia, profissionalismo e tecnologia de ponta para garantir a sua seguranca nas ruas.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/554732377867?text=Ol%C3%A1%2C%20Santos%20Auto%20Center%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+            Fale Conosco no WhatsApp
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/Santos+Auto+Center/data=!4m7!3m6!1s0x94df18f400c3ed11:0xad6a30bd8baaad30!8m2!3d-26.9366416!4d-49.0661055!16s%2Fg%2F11cn3typyk!19sChIJEe3DAPQY35QRMK2qi70waq0?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
       </div>
     </section>
 
@@ -244,9 +271,10 @@
       <div class="container">
         <h2 id="services-heading">Nossos Serviços</h2>
         <div class="cards-grid">
-          <article class="card"><span class="card-index">01</span><h3>Revisão Preventiva Completa</h3><p>Check-up detalhado dos principais sistemas do seu veículo para evitar surpresas desagradáveis e garantir o funcionamento ideal.</p></article>
-<article class="card"><span class="card-index">02</span><h3>Injeção Eletrônica Avançada</h3><p>Diagnóstico computadorizado preciso para identificar falhas, otimizar o consumo de combustível e restaurar a potência do motor.</p></article>
-<article class="card"><span class="card-index">03</span><h3>Frenagem e Suspensão</h3><p>Manutenção especializada em freios, amortecedores e componentes da suspensão para assegurar estabilidade e total controle ao dirigir.</p></article>
+          <article class="card"><div><span class="card-index">01</span><h3>Manutencao Preventiva</h3><p>Revisao completa de sistemas essenciais para evitar surpresas e prolongar a vida util do seu veiculo.</p></div><a class="card-link" href="https://wa.me/554732377867?text=Ol%C3%A1%2C%20Santos%20Auto%20Center%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Manutencao%20Preventiva." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">02</span><h3>Injecao Eletronica</h3><p>Diagnostico computadorizado preciso para resolver falhas e otimizar o consumo de combustivel.</p></div><a class="card-link" href="https://wa.me/554732377867?text=Ol%C3%A1%2C%20Santos%20Auto%20Center%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Injecao%20Eletronica." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">03</span><h3>Suspensao e Freios</h3><p>Verificacao e troca de componentes para garantir estabilidade e frenagem segura em qualquer situacao.</p></div><a class="card-link" href="https://wa.me/554732377867?text=Ol%C3%A1%2C%20Santos%20Auto%20Center%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Suspensao%20e%20Freios." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">04</span><h3>Troca de Oleo e Filtros</h3><p>Servico rapido com lubrificantes de alta qualidade recomendados pelo fabricante do seu automovel.</p></div><a class="card-link" href="https://wa.me/554732377867?text=Ol%C3%A1%2C%20Santos%20Auto%20Center%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Troca%20de%20Oleo%20e%20Filtros." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
         </div>
       </div>
     </section>
@@ -256,18 +284,18 @@
         <div class="panel">
           <h2>Por que escolher Santos Auto Center</h2>
           <ul class="why-list">
-            <li><span class="check" aria-hidden="true">✓</span><span>Atendimento transparente e focado na necessidade real do cliente</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Equipe técnica qualificada para cuidar de diversos modelos de veículos</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Localização de fácil acesso em Blumenau com estrutura dedicada</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Atendimento transparente e focado na sua total satisfacao.</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Localizacao de facil acesso na R. Gertrúdes Metzger, 102 em Blumenau.</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Equipe tecnica qualificada para cuidar do seu carro com seguranca.</span></li>
           </ul>
         </div>
         <div class="panel">
           <h2>Contato e Localização</h2>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> R. Gertrúdes Metzger, 102</li><li><strong>Telefone:</strong> <a href="tel:4732377867">(47) 3237-7867</a></li><li><strong>Site Atual:</strong> <a href="https://santosautocenter.com.br/" target="_blank" rel="noopener noreferrer">https://santosautocenter.com.br/</a></li>
+            <li><strong>Endereço:</strong> R. Gertrúdes Metzger, 102</li><li><strong>Telefone:</strong> <a href="tel:4732377867">(47) 3237-7867</a></li><li><strong>Site Atual:</strong> <a href="https://santosautocenter.com.br/" target="_blank" rel="noopener noreferrer">https://santosautocenter.com.br/</a></li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Santos+Auto+Center/data=!4m7!3m6!1s0x94df18f400c3ed11:0xad6a30bd8baaad30!8m2!3d-26.9366416!4d-49.0661055!16s%2Fg%2F11cn3typyk!19sChIJEe3DAPQY35QRMK2qi70waq0?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
           </ul>
           <a class="btn" href="https://wa.me/554732377867?text=Ol%C3%A1%2C%20Santos%20Auto%20Center%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-            Agendar Serviço no WhatsApp
+            Fale Conosco no WhatsApp
           </a>
         </div>
       </div>
@@ -277,9 +305,9 @@
       <div class="container">
         <h2 id="faq-heading">Dúvidas Frequentes</h2>
         <div class="faq-stack">
-          <details class="faq-item"><summary>Preciso agendar horário para realizar a revisão?</summary><p>Recomendamos o agendamento prévio por telefone ou WhatsApp para garantirmos um atendimento rápido, pontual e exclusivo para o seu veículo.</p></details>
-<details class="faq-item"><summary>Quais formas de pagamento são aceitas?</summary><p>Aceitamos diversas formas de pagamento, incluindo cartões de crédito, débito e transferência, facilitando a execução dos serviços necessários.</p></details>
-<details class="faq-item"><summary>Onde a oficina está localizada em Blumenau?</summary><p>Estamos situados na R. Gertrúdes Metzger, 102, prontos para receber você e oferecer o melhor suporte automotivo da região.</p></details>
+          <details class="faq-item"><summary>Preciso agendar horario para realizar a revisao?</summary><p>Recomendamos o agendamento previo por telefone ou WhatsApp para garantirmos um atendimento agil e dedicado ao seu veiculo.</p></details>
+<details class="faq-item"><summary>Quais formas de pagamento sao aceitas?</summary><p>Trabalhamos com diversas formas de pagamento para facilitar a manutencao do seu automovel. Consulte nossa equipe.</p></details>
+<details class="faq-item"><summary>Onde a Santos Auto Center esta localizada?</summary><p>Estamos localizados na R. Gertrúdes Metzger, 102 em Blumenau. Venha nos fazer uma visita.</p></details>
         </div>
       </div>
     </section>
@@ -291,6 +319,6 @@
     </div>
   </footer>
 
-  <a class="floating-wa" href="https://wa.me/554732377867?text=Ol%C3%A1%2C%20Santos%20Auto%20Center%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Agendar Serviço no WhatsApp">Agendar Serviço no WhatsApp</a>
+  <a class="floating-wa" href="https://wa.me/554732377867?text=Ol%C3%A1%2C%20Santos%20Auto%20Center%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Fale Conosco no WhatsApp">Fale Conosco no WhatsApp</a>
 </body>
 </html>

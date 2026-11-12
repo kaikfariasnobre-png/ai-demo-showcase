@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clínica Laís Loraine | Tricologia e estética — clinica estetica</title>
+  <title>Clínica Laís Loraine | Tricologia e estética — Clinica Estetica</title>
   <style>
     :root {
       --primary: #0284c7;
@@ -67,8 +67,19 @@
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
     .hero {
-      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/luxury-facial-spa-skincare.jpg') center / cover no-repeat;
       color: #f8fafc;
       padding: 3.5rem 0 3.75rem;
     }
@@ -124,6 +135,10 @@
       border-radius: 16px;
       padding: 1.35rem;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
     }
     .card-index {
       display: inline-block;
@@ -134,6 +149,15 @@
     }
     .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -217,10 +241,10 @@
     <div class="container header-inner">
       <div class="brand">
         Clínica Laís Loraine | Tricologia e estética
-        <span class="brand-sub">clinica estetica • Balneario Camboriu</span>
+        <span class="brand-sub">Clinica Estetica • Balneario Camboriu</span>
       </div>
       <a class="btn btn-sm" href="https://wa.me/5547996502576?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20La%C3%ADs%20Loraine%20%7C%20Tricologia%20e%20est%C3%A9tica%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-        Agendar no WhatsApp
+        Agende Seu Horário
       </a>
     </div>
   </header>
@@ -229,14 +253,17 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="kicker">clinica estetica • Balneario Camboriu</span>
+          <span class="kicker">Clinica Estetica • Balneario Camboriu</span>
           <div class="rating-pill">★ 5.0 (65 avaliações no Google)</div>
         </div>
-        <h1>Clínica Laís Loraine | Tricologia e estética: Atendimento Ágil em Balneario Camboriu</h1>
-        <p>Especialistas em clinica estetica em Balneario Camboriu. Tire dúvidas, consulte horários e solicite atendimento direto pelo WhatsApp em segundos.</p>
-        <a class="btn" href="https://wa.me/5547996502576?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20La%C3%ADs%20Loraine%20%7C%20Tricologia%20e%20est%C3%A9tica%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-          Agendar no WhatsApp
-        </a>
+        <h1>Excelência em Tricologia e Estética Avançada em Balneário Camboriú</h1>
+        <p>Descubra tratamentos especializados em saúde capilar e estética na Clínica Laís Loraine, localizada no Espaço Saúde. Agende seu atendimento com facilidade.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/5547996502576?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20La%C3%ADs%20Loraine%20%7C%20Tricologia%20e%20est%C3%A9tica%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+            Agende Seu Horário
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/Cl%C3%ADnica+La%C3%ADs+Loraine+%7C+Tricologia+e+est%C3%A9tica/data=!4m7!3m6!1s0x94d8b55fc02c47dd:0x68f4b5e1144077c0!8m2!3d-26.968997!4d-48.6388707!16s%2Fg%2F11fnc9syzr!19sChIJ3UcswF-12JQRwHdAFOG19Gg?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
       </div>
     </section>
 
@@ -244,9 +271,9 @@
       <div class="container">
         <h2 id="services-heading">Nossos Serviços</h2>
         <div class="cards-grid">
-          <article class="card"><span class="card-index">01</span><h3>clinica estetica Sob Medida</h3><p>Atendimento estruturado e explicações objetivas para quem busca clinica estetica em Balneario Camboriu.</p></article>
-<article class="card"><span class="card-index">02</span><h3>Agendamento Direto no WhatsApp</h3><p>Fale rapidamente com a equipe sem formulários longos nem espera em ligação.</p></article>
-<article class="card"><span class="card-index">03</span><h3>Orientação Clara Antes da Visita</h3><p>Esclareça dúvidas sobre disponibilidade, preparo e localização em um só lugar.</p></article>
+          <article class="card"><div><span class="card-index">01</span><h3>Tricologia Avançada</h3><p>Tratamentos focados na saúde do couro cabeludo e no combate à queda capilar com protocolos individualizados.</p></div><a class="card-link" href="https://wa.me/5547996502576?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20La%C3%ADs%20Loraine%20%7C%20Tricologia%20e%20est%C3%A9tica%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Tricologia%20Avan%C3%A7ada." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">02</span><h3>Estética Facial</h3><p>Procedimentos modernos para rejuvenescimento, revitalização e cuidados profundos com a pele do rosto.</p></div><a class="card-link" href="https://wa.me/5547996502576?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20La%C3%ADs%20Loraine%20%7C%20Tricologia%20e%20est%C3%A9tica%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Est%C3%A9tica%20Facial." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">03</span><h3>Estética Corporal</h3><p>Soluções completas para modelagem corporal, firmeza e bem-estar em um ambiente acolhedor e profissional.</p></div><a class="card-link" href="https://wa.me/5547996502576?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20La%C3%ADs%20Loraine%20%7C%20Tricologia%20e%20est%C3%A9tica%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Est%C3%A9tica%20Corporal." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
         </div>
       </div>
     </section>
@@ -256,18 +283,18 @@
         <div class="panel">
           <h2>Por que escolher Clínica Laís Loraine | Tricologia e estética</h2>
           <ul class="why-list">
-            <li><span class="check" aria-hidden="true">✓</span><span>Foco em clinica estetica em Balneario Camboriu com navegação simples no celular</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Contato em 1 toque para orçamento e verificação de horários</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Informações essenciais organizadas para gerar confiança imediata</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Atendimento personalizado na Clínica Laís Loraine</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Localização privilegiada no Espaço Saúde em Balneário Camboriú</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Foco absoluto na sua saúde capilar, estética e bem-estar</span></li>
           </ul>
         </div>
         <div class="panel">
           <h2>Contato e Localização</h2>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> Espaço Saúde - Rua Miguel Matte, 687</li><li><strong>Telefone:</strong> <a href="tel:47996502576">(47) 99650-2576</a></li>
+            <li><strong>Endereço:</strong> Espaço Saúde - Rua Miguel Matte, 687</li><li><strong>Telefone:</strong> <a href="tel:47996502576">(47) 99650-2576</a></li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Cl%C3%ADnica+La%C3%ADs+Loraine+%7C+Tricologia+e+est%C3%A9tica/data=!4m7!3m6!1s0x94d8b55fc02c47dd:0x68f4b5e1144077c0!8m2!3d-26.968997!4d-48.6388707!16s%2Fg%2F11fnc9syzr!19sChIJ3UcswF-12JQRwHdAFOG19Gg?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
           </ul>
           <a class="btn" href="https://wa.me/5547996502576?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20La%C3%ADs%20Loraine%20%7C%20Tricologia%20e%20est%C3%A9tica%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-            Agendar no WhatsApp
+            Agende Seu Horário
           </a>
         </div>
       </div>
@@ -277,9 +304,9 @@
       <div class="container">
         <h2 id="faq-heading">Dúvidas Frequentes</h2>
         <div class="faq-stack">
-          <details class="faq-item"><summary>Como faço para agendar na Clínica Laís Loraine | Tricologia e estética?</summary><p>Clique no botão de WhatsApp nesta página para iniciar o atendimento e verificar horários disponíveis.</p></details>
-<details class="faq-item"><summary>O atendimento funciona bem pelo celular?</summary><p>Sim, todo o contato é direto pelo WhatsApp para facilitar seu retorno sem burocracia.</p></details>
-<details class="faq-item"><summary>Qual a localização de atendimento?</summary><p>Atendemos em Espaço Saúde - Rua Miguel Matte, 687.</p></details>
+          <details class="faq-item"><summary>Onde a Clínica Laís Loraine está localizada?</summary><p>Estamos localizados no Espaço Saúde, na Rua Miguel Matte, 687, em Balneário Camboriú.</p></details>
+<details class="faq-item"><summary>Como posso agendar uma avaliação?</summary><p>Você pode entrar em contato diretamente pelo nosso telefone (47) 99650-2576 para agendar o seu horário.</p></details>
+<details class="faq-item"><summary>Quais são os principais tratamentos oferecidos?</summary><p>Somos especializados em tricologia e estética avançada, oferecendo cuidados completos para o cabelo, rosto e corpo.</p></details>
         </div>
       </div>
     </section>
@@ -291,6 +318,6 @@
     </div>
   </footer>
 
-  <a class="floating-wa" href="https://wa.me/5547996502576?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20La%C3%ADs%20Loraine%20%7C%20Tricologia%20e%20est%C3%A9tica%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Agendar no WhatsApp">Agendar no WhatsApp</a>
+  <a class="floating-wa" href="https://wa.me/5547996502576?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20La%C3%ADs%20Loraine%20%7C%20Tricologia%20e%20est%C3%A9tica%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Agende Seu Horário">Agende Seu Horário</a>
 </body>
 </html>

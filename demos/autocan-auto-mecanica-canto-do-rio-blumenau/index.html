@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Autocan - Auto Mecânica Canto do Rio — oficina mecanica</title>
+  <title>Autocan - Auto Mecânica Canto do Rio — Oficina Mecanica</title>
   <style>
     :root {
       --primary: #2563eb;
@@ -67,8 +67,19 @@
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
     .hero {
-      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/modern-small-business-interior.jpg') center / cover no-repeat;
       color: #f8fafc;
       padding: 3.5rem 0 3.75rem;
     }
@@ -124,6 +135,10 @@
       border-radius: 16px;
       padding: 1.35rem;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
     }
     .card-index {
       display: inline-block;
@@ -134,6 +149,15 @@
     }
     .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -217,7 +241,7 @@
     <div class="container header-inner">
       <div class="brand">
         Autocan - Auto Mecânica Canto do Rio
-        <span class="brand-sub">oficina mecanica • Blumenau</span>
+        <span class="brand-sub">Oficina Mecanica • Blumenau</span>
       </div>
       <a class="btn btn-sm" href="https://wa.me/554733365958?text=Ol%C3%A1%2C%20Autocan%20-%20Auto%20Mec%C3%A2nica%20Canto%20do%20Rio%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
         Fale Conosco
@@ -229,14 +253,17 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="kicker">oficina mecanica • Blumenau</span>
+          <span class="kicker">Oficina Mecanica • Blumenau</span>
           <div class="rating-pill">★ 4.6 (153 avaliações no Google)</div>
         </div>
         <h1>Manutenção mecânica de confiança em Blumenau</h1>
-        <p>Na Autocan - Auto Mecânica Canto do Rio localizada na R. Progresso, 3495, oferecemos serviços especializados para garantir o melhor desempenho e segurança do seu veículo.</p>
-        <a class="btn" href="https://wa.me/554733365958?text=Ol%C3%A1%2C%20Autocan%20-%20Auto%20Mec%C3%A2nica%20Canto%20do%20Rio%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-          Fale Conosco
-        </a>
+        <p>Serviços automotivos especializados para garantir a segurança e o desempenho do seu veículo com atendimento ágil em Blumenau.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/554733365958?text=Ol%C3%A1%2C%20Autocan%20-%20Auto%20Mec%C3%A2nica%20Canto%20do%20Rio%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+            Fale Conosco
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/Autocan+-+Auto+Mec%C3%A2nica+Canto+do+Rio/data=!4m7!3m6!1s0x94df1829a0a91b6f:0x99dec5ac764bab54!8m2!3d-26.981775!4d-49.075799!16s%2Fg%2F1tdy5m9v!19sChIJbxupoCkY35QRVKtLdqzF3pk?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
       </div>
     </section>
 
@@ -244,9 +271,9 @@
       <div class="container">
         <h2 id="services-heading">Nossos Serviços</h2>
         <div class="cards-grid">
-          <article class="card"><span class="card-index">01</span><h3>Manutenção Preventiva</h3><p>Revisões completas e periódicas para evitar falhas mecânicas e manter seu carro sempre pronto para rodar com segurança.</p></article>
-<article class="card"><span class="card-index">02</span><h3>Diagnóstico Computadorizado</h3><p>Identificação precisa de falhas em sistemas eletrônicos e motores através de equipamentos modernos e eficientes.</p></article>
-<article class="card"><span class="card-index">03</span><h3>Reparo de Freios e Suspensão</h3><p>Serviços especializados nos sistemas de frenagem e suspensão para garantir total estabilidade e controle na direção.</p></article>
+          <article class="card"><div><span class="card-index">01</span><h3>Manutenção Preventiva</h3><p>Revisão completa de sistemas essenciais para evitar falhas e prolongar a vida útil do seu automóvel.</p></div><a class="card-link" href="https://wa.me/554733365958?text=Ol%C3%A1%2C%20Autocan%20-%20Auto%20Mec%C3%A2nica%20Canto%20do%20Rio%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Manuten%C3%A7%C3%A3o%20Preventiva." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">02</span><h3>Injeção Eletrônica</h3><p>Diagnóstico computadorizado avançado para identificar falhas no motor e otimizar o consumo de combustível.</p></div><a class="card-link" href="https://wa.me/554733365958?text=Ol%C3%A1%2C%20Autocan%20-%20Auto%20Mec%C3%A2nica%20Canto%20do%20Rio%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Inje%C3%A7%C3%A3o%20Eletr%C3%B4nica." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">03</span><h3>Freios e Suspensão</h3><p>Inspeção e troca de componentes para garantir total estabilidade e segurança ao rodar pela cidade.</p></div><a class="card-link" href="https://wa.me/554733365958?text=Ol%C3%A1%2C%20Autocan%20-%20Auto%20Mec%C3%A2nica%20Canto%20do%20Rio%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Freios%20e%20Suspens%C3%A3o." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
         </div>
       </div>
     </section>
@@ -256,15 +283,15 @@
         <div class="panel">
           <h2>Por que escolher Autocan - Auto Mecânica Canto do Rio</h2>
           <ul class="why-list">
-            <li><span class="check" aria-hidden="true">✓</span><span>Atendimento dedicado e transparente</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Equipe técnica qualificada</span></li>
 <li><span class="check" aria-hidden="true">✓</span><span>Localização de fácil acesso em Blumenau</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Experiência e compromisso com a qualidade</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Atendimento transparente e focado em você</span></li>
           </ul>
         </div>
         <div class="panel">
           <h2>Contato e Localização</h2>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> R. Progresso, 3495</li><li><strong>Telefone:</strong> <a href="tel:4733365958">(47) 3336-5958</a></li><li><strong>Site Atual:</strong> <a href="https://www.autocan.com.br/" target="_blank" rel="noopener noreferrer">https://www.autocan.com.br/</a></li>
+            <li><strong>Endereço:</strong> R. Progresso, 3495</li><li><strong>Telefone:</strong> <a href="tel:4733365958">(47) 3336-5958</a></li><li><strong>Site Atual:</strong> <a href="https://www.autocan.com.br/" target="_blank" rel="noopener noreferrer">https://www.autocan.com.br/</a></li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Autocan+-+Auto+Mec%C3%A2nica+Canto+do+Rio/data=!4m7!3m6!1s0x94df1829a0a91b6f:0x99dec5ac764bab54!8m2!3d-26.981775!4d-49.075799!16s%2Fg%2F1tdy5m9v!19sChIJbxupoCkY35QRVKtLdqzF3pk?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
           </ul>
           <a class="btn" href="https://wa.me/554733365958?text=Ol%C3%A1%2C%20Autocan%20-%20Auto%20Mec%C3%A2nica%20Canto%20do%20Rio%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
             Fale Conosco
@@ -277,9 +304,9 @@
       <div class="container">
         <h2 id="faq-heading">Dúvidas Frequentes</h2>
         <div class="faq-stack">
-          <details class="faq-item"><summary>Onde fica localizada a oficina?</summary><p>Estamos localizados na R. Progresso, 3495, em Blumenau, prontos para atender você e seu veículo.</p></details>
-<details class="faq-item"><summary>Preciso agendar horário para manutenção?</summary><p>Recomendamos o contato prévio por telefone para garantir um atendimento ágil e sem esperas para o seu carro.</p></details>
-<details class="faq-item"><summary>Quais serviços de mecânica são realizados?</summary><p>Realizamos serviços completos de manutenção preventiva, diagnósticos e reparos essenciais para o seu veículo.</p></details>
+          <details class="faq-item"><summary>Onde a Autocan está localizada em Blumenau?</summary><p>Estamos situados na R. Progresso, 3495, prontos para atender você e seu veículo.</p></details>
+<details class="faq-item"><summary>Como posso entrar em contato com a oficina?</summary><p>Você pode ligar para o telefone (47) 3336-5958 para tirar dúvidas e agendar serviços.</p></details>
+<details class="faq-item"><summary>Quais serviços de mecânica são realizados?</summary><p>Oferecemos soluções completas incluindo manutenção preventiva, injeção eletrônica, revisão de freios e suspensão.</p></details>
         </div>
       </div>
     </section>

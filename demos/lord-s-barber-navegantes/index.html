@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LORD&#x27;S BARBER — barbearia</title>
+  <title>LORD&#x27;S BARBER — Barbearia</title>
   <style>
     :root {
       --primary: #2563eb;
@@ -67,8 +67,19 @@
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
     .hero {
-      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/modern-barber-shop-interior.jpg') center / cover no-repeat;
       color: #f8fafc;
       padding: 3.5rem 0 3.75rem;
     }
@@ -124,6 +135,10 @@
       border-radius: 16px;
       padding: 1.35rem;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
     }
     .card-index {
       display: inline-block;
@@ -134,6 +149,15 @@
     }
     .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -217,10 +241,10 @@
     <div class="container header-inner">
       <div class="brand">
         LORD&#x27;S BARBER
-        <span class="brand-sub">barbearia • Navegantes</span>
+        <span class="brand-sub">Barbearia • Navegantes</span>
       </div>
       <a class="btn btn-sm" href="https://wa.me/5547984337710?text=Ol%C3%A1%2C%20LORD%27S%20BARBER%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-        Agendar Horário
+        Agendar Horário Agora
       </a>
     </div>
   </header>
@@ -229,14 +253,17 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="kicker">barbearia • Navegantes</span>
+          <span class="kicker">Barbearia • Navegantes</span>
           <div class="rating-pill">★ 4.9 (348 avaliações no Google)</div>
         </div>
-        <h1>Estilo impecável na melhor barbearia de Navegantes</h1>
-        <p>Cortes modernos, barba alinhada e um atendimento de excelência para o homem contemporâneo. Venha cuidar do seu visual com profissionais especializados.</p>
-        <a class="btn" href="https://wa.me/5547984337710?text=Ol%C3%A1%2C%20LORD%27S%20BARBER%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-          Agendar Horário
-        </a>
+        <h1>Estilo e Tradição na Melhor Barbearia de Navegantes</h1>
+        <p>No LORD&#x27;S BARBER em Navegantes, você encontra atendimento especializado, corte impecável e barba feita com técnica e precisão. Agende seu horário conosco.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/5547984337710?text=Ol%C3%A1%2C%20LORD%27S%20BARBER%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+            Agendar Horário Agora
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/LORD%27S+BARBER/data=!4m7!3m6!1s0x94d8cc3955e9c767:0xa84486543cd20f48!8m2!3d-26.8984423!4d-48.6494958!16s%2Fg%2F11g88b74m9!19sChIJZ8fpVTnM2JQRSA_SPFSGRKg?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
       </div>
     </section>
 
@@ -244,9 +271,9 @@
       <div class="container">
         <h2 id="services-heading">Nossos Serviços</h2>
         <div class="cards-grid">
-          <article class="card"><span class="card-index">01</span><h3>Corte Masculino</h3><p>Cortes clássicos ou modernos adaptados ao seu estilo com acabamento impecável.</p></article>
-<article class="card"><span class="card-index">02</span><h3>Barba Completa</h3><p>Modelagem de barba com toalha quente e produtos de alta qualidade para cuidar da pele.</p></article>
-<article class="card"><span class="card-index">03</span><h3>Combo Corte e Barba</h3><p>O pacote completo para manter o seu visual sempre em dia com praticidade.</p></article>
+          <article class="card"><div><span class="card-index">01</span><h3>Corte de Cabelo Masculino</h3><p>Cortes modernos ou clássicos adaptados ao seu estilo pessoal, com acabamento perfeito e produtos de alta qualidade.</p></div><a class="card-link" href="https://wa.me/5547984337710?text=Ol%C3%A1%2C%20LORD%27S%20BARBER%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Corte%20de%20Cabelo%20Masculino." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">02</span><h3>Barba Completa</h3><p>Alinhamento de barba com navalha, toalha quente e produtos específicos para hidratação e cuidado da pele.</p></div><a class="card-link" href="https://wa.me/5547984337710?text=Ol%C3%A1%2C%20LORD%27S%20BARBER%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Barba%20Completa." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">03</span><h3>Combo Corte e Barba</h3><p>O serviço completo para o homem moderno que valoriza a aparência e busca praticidade em um só lugar.</p></div><a class="card-link" href="https://wa.me/5547984337710?text=Ol%C3%A1%2C%20LORD%27S%20BARBER%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Combo%20Corte%20e%20Barba." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
         </div>
       </div>
     </section>
@@ -256,18 +283,18 @@
         <div class="panel">
           <h2>Por que escolher LORD&#x27;S BARBER</h2>
           <ul class="why-list">
-            <li><span class="check" aria-hidden="true">✓</span><span>Profissionais altamente qualificados e atualizados</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Ambiente confortável e exclusivo para você relaxar</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Localização de fácil acesso na R. Francisco Solano Lopes, 178</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Profissionais experientes e dedicados ao seu visual</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Ambiente confortável e exclusivo em Navegantes</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Atendimento personalizado para cada cliente</span></li>
           </ul>
         </div>
         <div class="panel">
           <h2>Contato e Localização</h2>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> R. Francisco Solano Lopes, 178</li><li><strong>Telefone:</strong> <a href="tel:047984337710">047984337710</a></li><li><strong>Site Atual:</strong> <a href="https://booksy.com/pt-br/87877_lord-s-barber_barbearias_858728_navegantes?rwg_token=ALcMQYY0Kmb3YIMoMffhulvrN5XCYsrefNe4WK47AAVDpPRomH-BsYL5iJekZigDRB2Q_zyAaa9dKtBNk1TRjexw9aGrzn9wvg==" target="_blank" rel="noopener noreferrer">https://booksy.com/pt-br/87877_lord-s-barber_barbearias_858728_navegantes?rwg_token=ALcMQYY0Kmb3YIMoMffhulvrN5XCYsrefNe4WK47AAVDpPRomH-BsYL5iJekZigDRB2Q_zyAaa9dKtBNk1TRjexw9aGrzn9wvg==</a></li>
+            <li><strong>Endereço:</strong> R. Francisco Solano Lopes, 178</li><li><strong>Telefone:</strong> <a href="tel:047984337710">047984337710</a></li><li><strong>Site Atual:</strong> <a href="https://booksy.com/pt-br/87877_lord-s-barber_barbearias_858728_navegantes?rwg_token=ALcMQYY0Kmb3YIMoMffhulvrN5XCYsrefNe4WK47AAVDpPRomH-BsYL5iJekZigDRB2Q_zyAaa9dKtBNk1TRjexw9aGrzn9wvg==" target="_blank" rel="noopener noreferrer">https://booksy.com/pt-br/87877_lord-s-barber_barbearias_858728_navegantes?rwg_token=ALcMQYY0Kmb3YIMoMffhulvrN5XCYsrefNe4WK47AAVDpPRomH-BsYL5iJekZigDRB2Q_zyAaa9dKtBNk1TRjexw9aGrzn9wvg==</a></li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/LORD%27S+BARBER/data=!4m7!3m6!1s0x94d8cc3955e9c767:0xa84486543cd20f48!8m2!3d-26.8984423!4d-48.6494958!16s%2Fg%2F11g88b74m9!19sChIJZ8fpVTnM2JQRSA_SPFSGRKg?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
           </ul>
           <a class="btn" href="https://wa.me/5547984337710?text=Ol%C3%A1%2C%20LORD%27S%20BARBER%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-            Agendar Horário
+            Agendar Horário Agora
           </a>
         </div>
       </div>
@@ -277,9 +304,9 @@
       <div class="container">
         <h2 id="faq-heading">Dúvidas Frequentes</h2>
         <div class="faq-stack">
-          <details class="faq-item"><summary>Como faço para agendar meu horário?</summary><p>Você pode agendar de forma rápida e prática diretamente conosco pelos nossos canais de atendimento.</p></details>
-<details class="faq-item"><summary>Onde a barbearia está localizada?</summary><p>Estamos situados na R. Francisco Solano Lopes, 178 em Navegantes.</p></details>
-<details class="faq-item"><summary>Quais serviços são oferecidos?</summary><p>Oferecemos cortes masculinos modernos e tradicionais, além de cuidados completos para barba.</p></details>
+          <details class="faq-item"><summary>Como faço para agendar um horário?</summary><p>Você pode realizar o seu agendamento de forma rápida e prática diretamente através do nosso link de reservas online.</p></details>
+<details class="faq-item"><summary>Onde o LORD&#x27;S BARBER está localizado?</summary><p>Estamos situados na R. Francisco Solano Lopes, 178, em Navegantes, prontos para te receber.</p></details>
+<details class="faq-item"><summary>Quais serviços de barbearia são oferecidos?</summary><p>Oferecemos serviços completos de corte de cabelo masculino, design e alinhamento de barba, além de combos especiais.</p></details>
         </div>
       </div>
     </section>
@@ -291,6 +318,6 @@
     </div>
   </footer>
 
-  <a class="floating-wa" href="https://wa.me/5547984337710?text=Ol%C3%A1%2C%20LORD%27S%20BARBER%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Agendar Horário">Agendar Horário</a>
+  <a class="floating-wa" href="https://wa.me/5547984337710?text=Ol%C3%A1%2C%20LORD%27S%20BARBER%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Agendar Horário Agora">Agendar Horário Agora</a>
 </body>
 </html>

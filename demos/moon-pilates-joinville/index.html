@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moon Pilates — pilates</title>
+  <title>Moon Pilates — Pilates</title>
   <style>
     :root {
       --primary: #2563eb;
@@ -67,8 +67,19 @@
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
     .hero {
-      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/modern-fitness-pilates-studio.jpg') center / cover no-repeat;
       color: #f8fafc;
       padding: 3.5rem 0 3.75rem;
     }
@@ -124,6 +135,10 @@
       border-radius: 16px;
       padding: 1.35rem;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
     }
     .card-index {
       display: inline-block;
@@ -134,6 +149,15 @@
     }
     .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -217,10 +241,10 @@
     <div class="container header-inner">
       <div class="brand">
         Moon Pilates
-        <span class="brand-sub">pilates • Joinville</span>
+        <span class="brand-sub">Pilates • Joinville</span>
       </div>
       <a class="btn btn-sm" href="https://wa.me/5547988287073?text=Ol%C3%A1%2C%20Moon%20Pilates%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-        Agende Sua Aula no WhatsApp
+        Agende sua Aula
       </a>
     </div>
   </header>
@@ -229,14 +253,17 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="kicker">pilates • Joinville</span>
+          <span class="kicker">Pilates • Joinville</span>
           <div class="rating-pill">★ 5.0 (69 avaliações no Google)</div>
         </div>
-        <h1>Transforme Seu Corpo e Mente com o Moon Pilates em Joinville</h1>
-        <p>Descubra uma experiência única de bem-estar na R. Anita Garibaldi, 958. Aulas personalizadas de pilates para melhorar sua postura, força e qualidade de vida.</p>
-        <a class="btn" href="https://wa.me/5547988287073?text=Ol%C3%A1%2C%20Moon%20Pilates%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-          Agende Sua Aula no WhatsApp
-        </a>
+        <h1>Transforme seu Corpo e Mente com o Moon Pilates em Joinville</h1>
+        <p>Descubra o método completo de fortalecimento, flexibilidade e bem-estar localizado na R. Anita Garibaldi, 958. Agende sua aula e recupere sua qualidade de vida.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/5547988287073?text=Ol%C3%A1%2C%20Moon%20Pilates%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+            Agende sua Aula
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/Moon+Pilates/data=!4m7!3m6!1s0x94deb176539e792b:0x5c386ffcb89d36e6!8m2!3d-26.3211316!4d-48.8528205!16s%2Fg%2F11ylrt1t_g!19sChIJK3meU3ax3pQR5jaduPxvOFw?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
       </div>
     </section>
 
@@ -244,10 +271,9 @@
       <div class="container">
         <h2 id="services-heading">Nossos Serviços</h2>
         <div class="cards-grid">
-          <article class="card"><span class="card-index">01</span><h3>Pilates Clássico e Contemporâneo</h3><p>Aulas adaptadas para todos os níveis, focando no fortalecimento do core, flexibilidade e alinhamento postural.</p></article>
-<article class="card"><span class="card-index">02</span><h3>Pilates para Reabilitação</h3><p>Exercícios direcionados para recuperação de lesões, alívio de dores nas costas e melhora da mobilidade articular.</p></article>
-<article class="card"><span class="card-index">03</span><h3>Aulas Personalizadas</h3><p>Atenção individualizada com foco total nos seus objetivos pessoais de saúde e condicionamento físico.</p></article>
-<article class="card"><span class="card-index">04</span><h3>Treinamento Funcional Integrado</h3><p>Movimentos fluidos que combinam a técnica do pilates com o ganho de força para as atividades do dia a dia.</p></article>
+          <article class="card"><div><span class="card-index">01</span><h3>Aulas de Pilates Solo e Aparelhos</h3><p>Sessões personalizadas focadas no seu ritmo para melhorar postura, tonificar a musculatura e aliviar dores nas costas.</p></div><a class="card-link" href="https://wa.me/5547988287073?text=Ol%C3%A1%2C%20Moon%20Pilates%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Aulas%20de%20Pilates%20Solo%20e%20Aparelhos." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">02</span><h3>Fortalecimento e Reabilitação</h3><p>Exercícios direcionados para recuperação de lesões e prevenção, garantindo mais estabilidade e força para o dia a dia.</p></div><a class="card-link" href="https://wa.me/5547988287073?text=Ol%C3%A1%2C%20Moon%20Pilates%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Fortalecimento%20e%20Reabilita%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">03</span><h3>Flexibilidade e Bem-Estar</h3><p>Aumente sua amplitude de movimento e reduza o estresse diário através da respiração consciente e controle corporal.</p></div><a class="card-link" href="https://wa.me/5547988287073?text=Ol%C3%A1%2C%20Moon%20Pilates%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Flexibilidade%20e%20Bem-Estar." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
         </div>
       </div>
     </section>
@@ -257,18 +283,18 @@
         <div class="panel">
           <h2>Por que escolher Moon Pilates</h2>
           <ul class="why-list">
-            <li><span class="check" aria-hidden="true">✓</span><span>Profissionais altamente capacitados e atendimento personalizado</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Localização privilegiada na R. Anita Garibaldi em Joinville</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Ambiente acolhedor e totalmente equipado para a sua prática</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Atendimento personalizado para respeitar os seus limites e objetivos individuais</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Localização privilegiada na R. Anita Garibaldi, 958 em Joinville</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Foco total na melhoria da sua postura, saúde e qualidade de vida</span></li>
           </ul>
         </div>
         <div class="panel">
           <h2>Contato e Localização</h2>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> R. Anita Garibaldi, 958</li><li><strong>Telefone:</strong> <a href="tel:047988287073">047988287073</a></li><li><strong>Instagram:</strong> <a href="https://www.instagram.com/moonpilatesjlle?igsh=MTlta280Y2kyZmpmdA==" target="_blank" rel="noopener noreferrer">https://www.instagram.com/moonpilatesjlle?igsh=MTlta280Y2kyZmpmdA==</a></li><li><strong>Site Atual:</strong> <a href="https://www.instagram.com/moonpilatesjlle?igsh=MTlta280Y2kyZmpmdA==" target="_blank" rel="noopener noreferrer">https://www.instagram.com/moonpilatesjlle?igsh=MTlta280Y2kyZmpmdA==</a></li>
+            <li><strong>Endereço:</strong> R. Anita Garibaldi, 958</li><li><strong>Telefone:</strong> <a href="tel:047988287073">047988287073</a></li><li><strong>Instagram:</strong> <a href="https://www.instagram.com/moonpilatesjlle?igsh=MTlta280Y2kyZmpmdA==" target="_blank" rel="noopener noreferrer">https://www.instagram.com/moonpilatesjlle?igsh=MTlta280Y2kyZmpmdA==</a></li><li><strong>Site Atual:</strong> <a href="https://www.instagram.com/moonpilatesjlle?igsh=MTlta280Y2kyZmpmdA==" target="_blank" rel="noopener noreferrer">https://www.instagram.com/moonpilatesjlle?igsh=MTlta280Y2kyZmpmdA==</a></li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Moon+Pilates/data=!4m7!3m6!1s0x94deb176539e792b:0x5c386ffcb89d36e6!8m2!3d-26.3211316!4d-48.8528205!16s%2Fg%2F11ylrt1t_g!19sChIJK3meU3ax3pQR5jaduPxvOFw?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
           </ul>
           <a class="btn" href="https://wa.me/5547988287073?text=Ol%C3%A1%2C%20Moon%20Pilates%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
-            Agende Sua Aula no WhatsApp
+            Agende sua Aula
           </a>
         </div>
       </div>
@@ -278,9 +304,9 @@
       <div class="container">
         <h2 id="faq-heading">Dúvidas Frequentes</h2>
         <div class="faq-stack">
-          <details class="faq-item"><summary>Preciso ter experiência prévia para começar?</summary><p>Não! Nossas aulas são adaptadas tanto para iniciantes quanto para praticantes experientes, respeitando o ritmo de cada aluno.</p></details>
-<details class="faq-item"><summary>Onde o Moon Pilates está localizado?</summary><p>Estamos localizados na R. Anita Garibaldi, 958, em Joinville, SC.</p></details>
-<details class="faq-item"><summary>Como faço para agendar uma aula experimental?</summary><p>Você pode entrar em contato diretamente pelo nosso WhatsApp para verificar os horários disponíveis e agendar sua visita.</p></details>
+          <details class="faq-item"><summary>Como faço para agendar uma aula no Moon Pilates?</summary><p>Você pode entrar em contato conosco diretamente pelo telefone ou WhatsApp para verificar os horários disponíveis e agendar sua visita.</p></details>
+<details class="faq-item"><summary>O pilates é indicado para iniciantes?</summary><p>Sim! Nossas aulas são adaptadas para todos os níveis de condicionamento físico, desde quem nunca praticou até alunos avançados.</p></details>
+<details class="faq-item"><summary>Qual é o endereço do estúdio em Joinville?</summary><p>Estamos localizados na R.Anita Garibaldi, 958, em uma região de fácil acesso na cidade.</p></details>
         </div>
       </div>
     </section>
@@ -292,6 +318,6 @@
     </div>
   </footer>
 
-  <a class="floating-wa" href="https://wa.me/5547988287073?text=Ol%C3%A1%2C%20Moon%20Pilates%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Agende Sua Aula no WhatsApp">Agende Sua Aula no WhatsApp</a>
+  <a class="floating-wa" href="https://wa.me/5547988287073?text=Ol%C3%A1%2C%20Moon%20Pilates%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Agende sua Aula">Agende sua Aula</a>
 </body>
 </html>

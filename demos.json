@@ -57,6 +57,14 @@
       "url": "demos/am-studio-de-pilates-joinville/index.html"
     },
     {
+      "slug": "austin-med-spa-austin-tx",
+      "name": "Austin Med Spa",
+      "niche": "med spa",
+      "city": "Austin, TX",
+      "lang": "en",
+      "url": "demos/austin-med-spa-austin-tx/index.html"
+    },
+    {
       "slug": "auto-mecanica-e-eletrica-jc-blumenau",
       "name": "Auto Mecânica e Elétrica JC",
       "niche": "oficina mecanica",
@@ -113,20 +121,28 @@
       "url": "demos/barbearia-meraki-navegantes/index.html"
     },
     {
-      "slug": "clinica-biavatti-itajai-botox-preenchimentos-estetica-e-bioestimulador-de-colageno-itajai",
+      "slug": "carburapoint-navegantes",
+      "name": "Carburapoint",
+      "niche": "conveniencia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/carburapoint-navegantes/index.html"
+    },
+    {
+      "slug": "clinica-biavatti-itajai-botox-0541ba",
       "name": "Clínica Biavatti Itajaí- Botox, preenchimentos, Estética e Bioestimulador de colágeno",
       "niche": "clinica estetica",
       "city": "Itajai",
       "lang": "pt-BR",
-      "url": "demos/clinica-biavatti-itajai-botox-preenchimentos-estetica-e-bioestimulador-de-colageno-itajai/index.html"
+      "url": "demos/clinica-biavatti-itajai-botox-0541ba/index.html"
     },
     {
-      "slug": "clinica-d-zorzi-estetica-saude-balneario-camboriu",
+      "slug": "clinica-d-zorzi-estetica-saude-88a6e2",
       "name": "Clinica D'Zorzi Estética & Saúde",
       "niche": "clinica estetica",
       "city": "Balneario Camboriu",
       "lang": "pt-BR",
-      "url": "demos/clinica-d-zorzi-estetica-saude-balneario-camboriu/index.html"
+      "url": "demos/clinica-d-zorzi-estetica-saude-88a6e2/index.html"
     },
     {
       "slug": "clinica-d-zorzi-estetica-saude-itajai",
@@ -145,20 +161,20 @@
       "url": "demos/clinica-de-estetica-hamonir-itajai/index.html"
     },
     {
-      "slug": "clinica-dra-adriana-vinhal-instituto-academico-vinhal-balneario-camboriu",
+      "slug": "clinica-dra-adriana-vinhal-instituto-8a31fc",
       "name": "Clínica Dra Adriana Vinhal - Instituto Acadêmico Vinhal",
       "niche": "clinica estetica",
       "city": "Balneario Camboriu",
       "lang": "pt-BR",
-      "url": "demos/clinica-dra-adriana-vinhal-instituto-academico-vinhal-balneario-camboriu/index.html"
+      "url": "demos/clinica-dra-adriana-vinhal-instituto-8a31fc/index.html"
     },
     {
-      "slug": "clinica-dra-laiana-schneider-clinica-you-balneario-camboriu",
+      "slug": "clinica-dra-laiana-schneider-clinica-31f4ef",
       "name": "Clínica Dra Laiana Schneider - Clínica You",
       "niche": "clinica estetica",
       "city": "Balneario Camboriu",
       "lang": "pt-BR",
-      "url": "demos/clinica-dra-laiana-schneider-clinica-you-balneario-camboriu/index.html"
+      "url": "demos/clinica-dra-laiana-schneider-clinica-31f4ef/index.html"
     },
     {
       "slug": "clinica-estetica-virtuosa-balneario-camboriu",
@@ -169,12 +185,12 @@
       "url": "demos/clinica-estetica-virtuosa-balneario-camboriu/index.html"
     },
     {
-      "slug": "clinica-lais-loraine-tricologia-e-estetica-balneario-camboriu",
+      "slug": "clinica-lais-loraine-tricologia-e-139fbb",
       "name": "Clínica Laís Loraine | Tricologia e estética",
       "niche": "clinica estetica",
       "city": "Balneario Camboriu",
       "lang": "pt-BR",
-      "url": "demos/clinica-lais-loraine-tricologia-e-estetica-balneario-camboriu/index.html"
+      "url": "demos/clinica-lais-loraine-tricologia-e-139fbb/index.html"
     },
     {
       "slug": "conveka-navegantes",
@@ -185,12 +201,44 @@
       "url": "demos/conveka-navegantes/index.html"
     },
     {
+      "slug": "conveniencia-lobos-bebidas-em-geral-e-86e88a",
+      "name": "Conveniência Lobos | Bebidas em geral e variedades em Tabacaria.",
+      "niche": "conveniencia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/conveniencia-lobos-bebidas-em-geral-e-86e88a/index.html"
+    },
+    {
+      "slug": "corujao-bebidas-conveniencia-navegantes",
+      "name": "Corujão Bebidas Conveniência",
+      "niche": "conveniencia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/corujao-bebidas-conveniencia-navegantes/index.html"
+    },
+    {
       "slug": "d-luxe-clinica-de-estetica-itajai",
       "name": "D'Luxe Clinica de Estética",
       "niche": "clinica estetica",
       "city": "Itajai",
       "lang": "pt-BR",
       "url": "demos/d-luxe-clinica-de-estetica-itajai/index.html"
+    },
+    {
+      "slug": "dudu-conveniencia-navegantes",
+      "name": "Dudu Conveniência",
+      "niche": "conveniencia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/dudu-conveniencia-navegantes/index.html"
+    },
+    {
+      "slug": "it-s-a-secret-med-spa-austin-austin-tx",
+      "name": "It's A Secret Med Spa - Austin",
+      "niche": "med spa",
+      "city": "Austin, TX",
+      "lang": "en",
+      "url": "demos/it-s-a-secret-med-spa-austin-austin-tx/index.html"
     },
     {
       "slug": "jm-barbearia-navegantes",
@@ -209,12 +257,28 @@
       "url": "demos/lord-s-barber-navegantes/index.html"
     },
     {
-      "slug": "lunni-clinic-clinica-de-estetica-avancada-tratamentos-faciais-e-corporais-itajai",
+      "slug": "lunni-clinic-clinica-de-estetica-dfb9b7",
       "name": "Lunni Clinic - Clínica de Estética Avançada | Tratamentos Faciais e Corporais",
       "niche": "clinica estetica",
       "city": "Itajai",
       "lang": "pt-BR",
-      "url": "demos/lunni-clinic-clinica-de-estetica-avancada-tratamentos-faciais-e-corporais-itajai/index.html"
+      "url": "demos/lunni-clinic-clinica-de-estetica-dfb9b7/index.html"
+    },
+    {
+      "slug": "mare-adega-e-distribuidora-de-bebidas-navegantes",
+      "name": "Maré Adega e Distribuidora de bebidas",
+      "niche": "conveniencia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/mare-adega-e-distribuidora-de-bebidas-navegantes/index.html"
+    },
+    {
+      "slug": "maui-medspa-austin-tx",
+      "name": "Maui MedSpa",
+      "niche": "med spa",
+      "city": "Austin, TX",
+      "lang": "en",
+      "url": "demos/maui-medspa-austin-tx/index.html"
     },
     {
       "slug": "momentum-centro-de-treinamento-navegantes",
@@ -231,6 +295,22 @@
       "city": "Joinville",
       "lang": "pt-BR",
       "url": "demos/moon-pilates-joinville/index.html"
+    },
+    {
+      "slug": "nakedmd-med-spa-austin-austin-tx",
+      "name": "NakedMD Med Spa Austin",
+      "niche": "med spa",
+      "city": "Austin, TX",
+      "lang": "en",
+      "url": "demos/nakedmd-med-spa-austin-austin-tx/index.html"
+    },
+    {
+      "slug": "navega-bier-conveniencia-24horas-navegantes",
+      "name": "NAVEGA BIER CONVENIÊNCIA 24Horas",
+      "niche": "conveniencia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/navega-bier-conveniencia-24horas-navegantes/index.html"
     },
     {
       "slug": "nomaclub-joinville",
@@ -265,12 +345,28 @@
       "url": "demos/santos-auto-center-blumenau/index.html"
     },
     {
+      "slug": "spa-luxe-austin-austin-tx",
+      "name": "Spa Luxe Austin",
+      "niche": "med spa",
+      "city": "Austin, TX",
+      "lang": "en",
+      "url": "demos/spa-luxe-austin-austin-tx/index.html"
+    },
+    {
       "slug": "start-fit-navegantes",
       "name": "Start Fit",
       "niche": "academia",
       "city": "navegantes",
       "lang": "pt-BR",
       "url": "demos/start-fit-navegantes/index.html"
+    },
+    {
+      "slug": "stop-adega-e-conveniencia-navegantes",
+      "name": "Stop!! Adega e Conveniência",
+      "niche": "conveniencia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/stop-adega-e-conveniencia-navegantes/index.html"
     },
     {
       "slug": "studio-respilates-joinville",
@@ -281,12 +377,28 @@
       "url": "demos/studio-respilates-joinville/index.html"
     },
     {
-      "slug": "yoganic-yoga-treinamento-funcional-e-corrida-em-navegantes-navegantes",
+      "slug": "v8-conveniencia-navegantes",
+      "name": "V8 CONVENIÊNCIA",
+      "niche": "conveniencia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/v8-conveniencia-navegantes/index.html"
+    },
+    {
+      "slug": "viva-day-spa-med-spa-domain-northside-austin-tx",
+      "name": "Viva Day Spa + Med Spa | Domain Northside",
+      "niche": "med spa",
+      "city": "Austin, TX",
+      "lang": "en",
+      "url": "demos/viva-day-spa-med-spa-domain-northside-austin-tx/index.html"
+    },
+    {
+      "slug": "yoganic-yoga-treinamento-funcional-e-08635b",
       "name": "YogāNic - Yoga, Treinamento Funcional e Corrida em Navegantes",
       "niche": "academia",
       "city": "navegantes",
       "lang": "pt-BR",
-      "url": "demos/yoganic-yoga-treinamento-funcional-e-corrida-em-navegantes-navegantes/index.html"
+      "url": "demos/yoganic-yoga-treinamento-funcional-e-08635b/index.html"
     }
   ]
 }

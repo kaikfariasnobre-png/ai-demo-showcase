@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academia Araujo Coelho — academia</title>
+  <title>Academia Araujo Coelho — Academia</title>
   <style>
     :root {
       --primary: #2563eb;
@@ -67,8 +67,19 @@
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
     .hero {
-      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/modern-fitness-pilates-studio.jpg') center / cover no-repeat;
       color: #f8fafc;
       padding: 3.5rem 0 3.75rem;
     }
@@ -124,6 +135,10 @@
       border-radius: 16px;
       padding: 1.35rem;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
     }
     .card-index {
       display: inline-block;
@@ -134,6 +149,15 @@
     }
     .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -217,10 +241,10 @@
     <div class="container header-inner">
       <div class="brand">
         Academia Araujo Coelho
-        <span class="brand-sub">academia • navegantes</span>
+        <span class="brand-sub">Academia • navegantes</span>
       </div>
       <a class="btn btn-sm" href="#contact">
-        Agendar no WhatsApp
+        Fale Conosco no WhatsApp
       </a>
     </div>
   </header>
@@ -229,14 +253,17 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="kicker">academia • navegantes</span>
+          <span class="kicker">Academia • navegantes</span>
           <div class="rating-pill">★ 4.7 (134 avaliações no Google)</div>
         </div>
-        <h1>Academia Araujo Coelho: Atendimento Ágil em navegantes</h1>
-        <p>Especialistas em academia em navegantes. Tire dúvidas, consulte horários e solicite atendimento direto pelo WhatsApp em segundos.</p>
-        <a class="btn" href="#contact">
-          Agendar no WhatsApp
-        </a>
+        <h1>Transforme sua saúde e bem-estar na Academia Araujo Coelho em Navegantes</h1>
+        <p>Descubra nossos treinos personalizados, estrutura completa e suporte profissional para alcançar seus objetivos de condicionamento físico com segurança e energia.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">
+            Fale Conosco no WhatsApp
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/Academia+Araujo+Coelho/data=!4m7!3m6!1s0x94d8cc1409d3b48b:0x47ec7af95696c3c1!8m2!3d-26.898057!4d-48.6547239!16s%2Fg%2F11bvtgt6sq!19sChIJi7TTCRTM2JQRwcOWVvl67Ec?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
       </div>
     </section>
 
@@ -244,9 +271,10 @@
       <div class="container">
         <h2 id="services-heading">Nossos Serviços</h2>
         <div class="cards-grid">
-          <article class="card"><span class="card-index">01</span><h3>academia Sob Medida</h3><p>Atendimento estruturado e explicações objetivas para quem busca academia em navegantes.</p></article>
-<article class="card"><span class="card-index">02</span><h3>Agendamento Direto no WhatsApp</h3><p>Fale rapidamente com a equipe sem formulários longos nem espera em ligação.</p></article>
-<article class="card"><span class="card-index">03</span><h3>Orientação Clara Antes da Visita</h3><p>Esclareça dúvidas sobre disponibilidade, preparo e localização em um só lugar.</p></article>
+          <article class="card"><div><span class="card-index">01</span><h3>Musculação Completa</h3><p>Equipamentos modernos e orientados para hipertrofia, tonificação e ganho de força com acompanhamento dedicado.</p></div></article>
+<article class="card"><div><span class="card-index">02</span><h3>Treinamento Funcional</h3><p>Exercícios dinâmicos focados em agilidade, equilíbrio, resistência e melhora do desempenho nas atividades diárias.</p></div></article>
+<article class="card"><div><span class="card-index">03</span><h3>Avaliação Física</h3><p>Análise detalhada da composição corporal para direcionar seu treino com foco em resultados reais e seguros.</p></div></article>
+<article class="card"><div><span class="card-index">04</span><h3>Consultoria de ós</h3><p>Planos de treino individualizados elaborados por profissionais qualificados para respeitar o seu ritmo e metas.</p></div></article>
         </div>
       </div>
     </section>
@@ -256,18 +284,18 @@
         <div class="panel">
           <h2>Por que escolher Academia Araujo Coelho</h2>
           <ul class="why-list">
-            <li><span class="check" aria-hidden="true">✓</span><span>Foco em academia em navegantes com navegação simples no celular</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Contato em 1 toque para orçamento e verificação de horários</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Informações essenciais organizadas para gerar confiança imediata</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Ambiente acolhedor e motivador localizado na R. Evaldo Reiser</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Profissionais capacitados prontos para guiar sua evolução</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Foco total na sua saúde, segurança e qualidade de vida</span></li>
           </ul>
         </div>
         <div class="panel">
           <h2>Contato e Localização</h2>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> R. Evaldo Reiser</li>
+            <li><strong>Endereço:</strong> R. Evaldo Reiser</li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Academia+Araujo+Coelho/data=!4m7!3m6!1s0x94d8cc1409d3b48b:0x47ec7af95696c3c1!8m2!3d-26.898057!4d-48.6547239!16s%2Fg%2F11bvtgt6sq!19sChIJi7TTCRTM2JQRwcOWVvl67Ec?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
           </ul>
           <a class="btn" href="#contact">
-            Agendar no WhatsApp
+            Fale Conosco no WhatsApp
           </a>
         </div>
       </div>
@@ -277,9 +305,9 @@
       <div class="container">
         <h2 id="faq-heading">Dúvidas Frequentes</h2>
         <div class="faq-stack">
-          <details class="faq-item"><summary>Como faço para agendar na Academia Araujo Coelho?</summary><p>Clique no botão de WhatsApp nesta página para iniciar o atendimento e verificar horários disponíveis.</p></details>
-<details class="faq-item"><summary>O atendimento funciona bem pelo celular?</summary><p>Sim, todo o contato é direto pelo WhatsApp para facilitar seu retorno sem burocracia.</p></details>
-<details class="faq-item"><summary>Qual a localização de atendimento?</summary><p>Atendemos em R. Evaldo Reiser.</p></details>
+          <details class="faq-item"><summary>Como faço para me matricular na academia?</summary><p>Você pode entrar em contato diretamente pelo nosso WhatsApp para conhecer os planos disponíveis e iniciar seus treinos.</p></details>
+<details class="faq-item"><summary>Preciso ter experiência prévia para treinar?</summary><p>Não! Nossos treinos são adaptados para todos os níveis, desde iniciantes até praticantes avançados.</p></details>
+<details class="faq-item"><summary>Quais modalidades são oferecidas na academia?</summary><p>Oferecemos musculação completa, treinamento funcional e suporte especializado para garantir o seu progresso.</p></details>
         </div>
       </div>
     </section>

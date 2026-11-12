@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lunni Clinic - Clínica de Estética Avançada | Tratamentos Faciais e Corporais — clinica estetica</title>
+  <title>Stop!! Adega e Conveniência — Conveniencia</title>
   <style>
     :root {
-      --primary: #0284c7;
-      --accent: #0d9488;
+      --primary: #2563eb;
+      --accent: #059669;
       --bg: #f8fafc;
       --surface: #ffffff;
       --ink: #0f172a;
@@ -67,8 +67,19 @@
     }
     .btn:hover { transform: translateY(-1px); }
     .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
     .hero {
-      background: linear-gradient(155deg, #0f172a 0%, #1e293b 100%);
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/modern-small-business-interior.jpg') center / cover no-repeat;
       color: #f8fafc;
       padding: 3.5rem 0 3.75rem;
     }
@@ -124,6 +135,10 @@
       border-radius: 16px;
       padding: 1.35rem;
       box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
     }
     .card-index {
       display: inline-block;
@@ -134,6 +149,15 @@
     }
     .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
     .split {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -211,16 +235,16 @@
   </style>
 </head>
 <body>
-  <div class="preview-strip">Preview Personalizado ao Vivo para Lunni Clinic - Clínica de Estética Avançada | Tratamentos Faciais e Corporais</div>
+  <div class="preview-strip">Preview Personalizado ao Vivo para Stop!! Adega e Conveniência</div>
 
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        Lunni Clinic - Clínica de Estética Avançada | Tratamentos Faciais e Corporais
-        <span class="brand-sub">clinica estetica • Itajai</span>
+        Stop!! Adega e Conveniência
+        <span class="brand-sub">Conveniencia • Navegantes</span>
       </div>
-      <a class="btn btn-sm" href="#contact">
-        Agendar no WhatsApp
+      <a class="btn btn-sm" href="https://wa.me/5547991075857?text=Ol%C3%A1%2C%20Stop%21%21%20Adega%20e%20Conveni%C3%AAncia%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+        Fale pelo WhatsApp
       </a>
     </div>
   </header>
@@ -229,14 +253,17 @@
     <section class="hero">
       <div class="container">
         <div>
-          <span class="kicker">clinica estetica • Itajai</span>
-          <div class="rating-pill">★ 5.0 (124 avaliações no Google)</div>
+          <span class="kicker">Conveniencia • Navegantes</span>
+          <div class="rating-pill">★ 5.0 (5 avaliações no Google)</div>
         </div>
-        <h1>Lunni Clinic - Clínica de Estética Avançada | Tratamentos Faciais e Corporais: Atendimento Ágil em Itajai</h1>
-        <p>Especialistas em clinica estetica em Itajai. Tire dúvidas, consulte horários e solicite atendimento direto pelo WhatsApp em segundos.</p>
-        <a class="btn" href="#contact">
-          Agendar no WhatsApp
-        </a>
+        <h1>Bebidas geladas e conveniência completa em Navegantes</h1>
+        <p>Encontre tudo o que você precisa na Stop!! Adega e Conveniência. Localizados na Av. Conselheiro João Gaya, 702, garantimos atendimento rápido e produtos de alta qualidade para o seu dia a dia.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/5547991075857?text=Ol%C3%A1%2C%20Stop%21%21%20Adega%20e%20Conveni%C3%AAncia%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+            Fale pelo WhatsApp
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/Stop!!+Adega+e+Conveni%C3%AAncia/data=!4m7!3m6!1s0x94d8cd0013d955dd:0x8129e14d9807c3a2!8m2!3d-26.8959669!4d-48.6505124!16s%2Fg%2F11xh5vh50h!19sChIJ3VXZEwDN2JQRosMHmE3hKYE?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
       </div>
     </section>
 
@@ -244,9 +271,9 @@
       <div class="container">
         <h2 id="services-heading">Nossos Serviços</h2>
         <div class="cards-grid">
-          <article class="card"><span class="card-index">01</span><h3>clinica estetica Sob Medida</h3><p>Atendimento estruturado e explicações objetivas para quem busca clinica estetica em Itajai.</p></article>
-<article class="card"><span class="card-index">02</span><h3>Agendamento Direto no WhatsApp</h3><p>Fale rapidamente com a equipe sem formulários longos nem espera em ligação.</p></article>
-<article class="card"><span class="card-index">03</span><h3>Orientação Clara Antes da Visita</h3><p>Esclareça dúvidas sobre disponibilidade, preparo e localização em um só lugar.</p></article>
+          <article class="card"><div><span class="card-index">01</span><h3>Bebidas Geladas</h3><p>Grande variedade de cervejas, destilados, vinhos e refrigerantes sempre na temperatura ideal para o seu momento de lazer.</p></div><a class="card-link" href="https://wa.me/5547991075857?text=Ol%C3%A1%2C%20Stop%21%21%20Adega%20e%20Conveni%C3%AAncia%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Bebidas%20Geladas." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">02</span><h3>Petiscos e Guloseimas</h3><p>Snacks, salgadinhos e acompanhamentos selecionados para completar o seu happy hour ou reunião com amigos.</p></div><a class="card-link" href="https://wa.me/5547991075857?text=Ol%C3%A1%2C%20Stop%21%21%20Adega%20e%20Conveni%C3%AAncia%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Petiscos%20e%20Guloseimas." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">03</span><h3>Atendimento Rápido</h3><p>Conveniência ágil e prática para você resolver suas compras de última hora sem perder tempo.</p></div><a class="card-link" href="https://wa.me/5547991075857?text=Ol%C3%A1%2C%20Stop%21%21%20Adega%20e%20Conveni%C3%AAncia%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Atendimento%20R%C3%A1pido." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
         </div>
       </div>
     </section>
@@ -254,20 +281,20 @@
     <section id="contact">
       <div class="container split">
         <div class="panel">
-          <h2>Por que escolher Lunni Clinic - Clínica de Estética Avançada | Tratamentos Faciais e Corporais</h2>
+          <h2>Por que escolher Stop!! Adega e Conveniência</h2>
           <ul class="why-list">
-            <li><span class="check" aria-hidden="true">✓</span><span>Foco em clinica estetica em Itajai com navegação simples no celular</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Contato em 1 toque para orçamento e verificação de horários</span></li>
-<li><span class="check" aria-hidden="true">✓</span><span>Informações essenciais organizadas para gerar confiança imediata</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span>Localização privilegiada na Av. Conselheiro João Gaya, 702</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Variedade completa de bebidas e conveniência em Navegantes</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Atendimento focado na sua praticidade e satisfação</span></li>
           </ul>
         </div>
         <div class="panel">
           <h2>Contato e Localização</h2>
           <ul class="contact-list">
-            <li><strong>Endereço:</strong> Rua XV de Novembro, 159</li>
+            <li><strong>Endereço:</strong> Av. Conselheiro João Gaya, 702</li><li><strong>Telefone:</strong> <a href="tel:047991075857">047991075857</a></li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Stop!!+Adega+e+Conveni%C3%AAncia/data=!4m7!3m6!1s0x94d8cd0013d955dd:0x8129e14d9807c3a2!8m2!3d-26.8959669!4d-48.6505124!16s%2Fg%2F11xh5vh50h!19sChIJ3VXZEwDN2JQRosMHmE3hKYE?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
           </ul>
-          <a class="btn" href="#contact">
-            Agendar no WhatsApp
+          <a class="btn" href="https://wa.me/5547991075857?text=Ol%C3%A1%2C%20Stop%21%21%20Adega%20e%20Conveni%C3%AAncia%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+            Fale pelo WhatsApp
           </a>
         </div>
       </div>
@@ -277,9 +304,9 @@
       <div class="container">
         <h2 id="faq-heading">Dúvidas Frequentes</h2>
         <div class="faq-stack">
-          <details class="faq-item"><summary>Como faço para agendar na Lunni Clinic - Clínica de Estética Avançada | Tratamentos Faciais e Corporais?</summary><p>Clique no botão de WhatsApp nesta página para iniciar o atendimento e verificar horários disponíveis.</p></details>
-<details class="faq-item"><summary>O atendimento funciona bem pelo celular?</summary><p>Sim, todo o contato é direto pelo WhatsApp para facilitar seu retorno sem burocracia.</p></details>
-<details class="faq-item"><summary>Qual a localização de atendimento?</summary><p>Atendemos em Rua XV de Novembro, 159.</p></details>
+          <details class="faq-item"><summary>Onde fica localizada a Stop!! Adega e Conveniência?</summary><p>Estamos localizados na Av. Conselheiro João Gaya, 702, em Navegantes.</p></details>
+<details class="faq-item"><summary>Quais tipos de produtos encontro na loja?</summary><p>Oferecemos uma linha completa de bebidas geladas, petiscos e itens de conveniência para o seu dia a dia.</p></details>
+<details class="faq-item"><summary>Como posso entrar em contato com a loja?</summary><p>Você pode falar conosco diretamente pelo telefone ou WhatsApp (047991075857).</p></details>
         </div>
       </div>
     </section>
@@ -287,10 +314,10 @@
 
   <footer>
     <div class="container">
-      <strong>Lunni Clinic - Clínica de Estética Avançada | Tratamentos Faciais e Corporais</strong> — Preview demonstrativo criado exclusivamente para Lunni Clinic - Clínica de Estética Avançada | Tratamentos Faciais e Corporais.
+      <strong>Stop!! Adega e Conveniência</strong> — Preview demonstrativo criado exclusivamente para Stop!! Adega e Conveniência.
     </div>
   </footer>
 
-  
+  <a class="floating-wa" href="https://wa.me/5547991075857?text=Ol%C3%A1%2C%20Stop%21%21%20Adega%20e%20Conveni%C3%AAncia%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Fale pelo WhatsApp">Fale pelo WhatsApp</a>
 </body>
 </html>
