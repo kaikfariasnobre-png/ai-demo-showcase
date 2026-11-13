@@ -108,9 +108,9 @@ const I18N = {
     footer_tag: "Engenharia de conversão mobile-first e automação local.",
     footer_cta: "Falar no WhatsApp",
     modal_rail_label: "Canal de Pagamento Selecionado:",
-    modal_wa_btn: "Solicitar Link Pix / Checkout no WhatsApp",
+    modal_wa_btn: "Solicitar Chave Pix / Link no WhatsApp",
     modal_instructions:
-      "Você só paga após testar e aprovar o preview personalizado do seu negócio. Clique abaixo para receber o link direto de pagamento ou configure a URL em site/app.js.",
+      "Você só paga após testar e aprovar o preview personalizado do seu negócio. Clique abaixo para solicitar a chave Pix instantânea ou link de pagamento direto pelo WhatsApp.",
     wa_default_msg:
       "Olá! Quero solicitar um preview gratuito de site otimizado para WhatsApp para o meu negócio.",
     demo_badge_live: "Preview Gerado",
@@ -201,7 +201,7 @@ const I18N = {
     modal_rail_label: "Selected Payment Rail:",
     modal_wa_btn: "Request Payment Link via WhatsApp",
     modal_instructions:
-      "You only pay after testing and approving your custom live preview. Click below to request your direct checkout link on WhatsApp, or set your live payment URL in site/app.js.",
+      "You only pay after testing and approving your custom live preview. Click below to request your direct card or payment link via WhatsApp.",
     wa_default_msg:
       "Hi! I would like to request a free mobile-first website preview for my business.",
     demo_badge_live: "Generated Preview",

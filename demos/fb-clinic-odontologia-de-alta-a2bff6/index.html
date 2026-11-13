@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB Clinic - Odontologia de alta performance | Dentista Praia Brava / Balneário Camboriú — Clinica Odontologica</title>
+  <style>
+    :root {
+      --primary: #0284c7;
+      --accent: #0d9488;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--primary); }
+    .container { width: min(1040px, calc(100% - 2rem)); margin-inline: auto; }
+    .preview-strip {
+      background: #0f172a;
+      color: #cbd5e1;
+      font-size: 0.78rem;
+      text-align: center;
+      padding: 0.45rem 1rem;
+    }
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 64px;
+      flex-wrap: wrap;
+      padding-block: 0.5rem;
+    }
+    .brand { font-weight: 800; font-size: 1.05rem; letter-spacing: -0.02em; color: var(--ink); }
+    .brand-sub { display: block; font-size: 0.76rem; font-weight: 600; color: var(--muted); }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 12px;
+      padding: 0.72rem 1.25rem;
+      font-size: 0.94rem;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.14);
+      transition: transform 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+    .hero {
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/modern-dental-clinic-bright.jpg') center / cover no-repeat;
+      color: #f8fafc;
+      padding: 3.5rem 0 3.75rem;
+    }
+    .kicker {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .rating-pill {
+      display: inline-block;
+      margin-left: 0.5rem;
+      background: rgba(250, 204, 21, 0.16);
+      border: 1px solid rgba(250, 204, 21, 0.45);
+      color: #fde047;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      margin: 0 0 0.9rem;
+      font-size: clamp(1.85rem, 4vw, 2.85rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      max-width: 19ch;
+    }
+    .hero p {
+      margin: 0 0 1.6rem;
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      max-width: 58ch;
+    }
+    section { padding: 3rem 0; }
+    h2 {
+      margin: 0 0 1.4rem;
+      font-size: clamp(1.35rem, 2.6vw, 1.85rem);
+      letter-spacing: -0.02em;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.15rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.35rem;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
+    }
+    .card-index {
+      display: inline-block;
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
+    .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
+    .split {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem;
+    }
+    .why-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.85rem;
+    }
+    .why-list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 0.65rem;
+      align-items: start;
+    }
+    .check {
+      display: grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.14);
+      color: #059669;
+      font-weight: 800;
+      font-size: 0.82rem;
+    }
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.25rem;
+      display: grid;
+      gap: 0.65rem;
+      font-size: 0.94rem;
+      word-break: break-word;
+    }
+    .faq-stack { display: grid; gap: 0.75rem; }
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.95rem 1.15rem;
+    }
+    .faq-item summary { font-weight: 700; cursor: pointer; }
+    .faq-item p { margin: 0.6rem 0 0; color: var(--muted); font-size: 0.92rem; }
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 1.5rem 0 4.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    .floating-wa {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 30;
+      background: #16a34a;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 0.78rem 1.15rem;
+      border-radius: 999px;
+      box-shadow: 0 12px 28px rgba(22, 163, 74, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-strip">Preview Personalizado ao Vivo para FB Clinic - Odontologia de alta performance | Dentista Praia Brava / Balneário Camboriú</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        FB Clinic - Odontologia de alta performance | Dentista Praia Brava / Balneário Camboriú
+        <span class="brand-sub">Clinica Odontologica • Balneario Camboriu</span>
+      </div>
+      <a class="btn btn-sm" href="https://wa.me/5547992677790?text=Ol%C3%A1%2C%20FB%20Clinic%20-%20Odontologia%20de%20alta%20performance%20%7C%20Dentista%20Praia%20Brava%20/%20Balne%C3%A1rio%20Cambori%C3%BA%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+        Agendar Consulta
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div>
+          <span class="kicker">Clinica Odontologica • Balneario Camboriu</span>
+          <div class="rating-pill">★ 5.0 (37 avaliações no Google)</div>
+        </div>
+        <h1>Odontologia de Alta Performance em Balneário Camboriú</h1>
+        <p>Excelência em tratamentos odontológicos na Praia Brava. Agende sua consulta com especialistas focados no seu sorriso.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/5547992677790?text=Ol%C3%A1%2C%20FB%20Clinic%20-%20Odontologia%20de%20alta%20performance%20%7C%20Dentista%20Praia%20Brava%20/%20Balne%C3%A1rio%20Cambori%C3%BA%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+            Agendar Consulta
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/FB+Clinic+-+Odontologia+de+alta+performance+%7C+Dentista+Praia+Brava+%2F+Balne%C3%A1rio+Cambori%C3%BA/data=!4m7!3m6!1s0x94d8cba0c7c4e98f:0xc37cfc7deb53f0ef!8m2!3d-26.955961!4d-48.636323!16s%2Fg%2F11td8hk9l8!19sChIJj-nEx6DL2JQR7_BT6338fMM?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading">Nossos Serviços</h2>
+        <div class="cards-grid">
+          <article class="card"><div><span class="card-index">01</span><h3>Implantes Dentários</h3><p>Recupere a função mastigatória e a estética do seu sorriso com técnicas avançadas e seguras.</p></div><a class="card-link" href="https://wa.me/5547992677790?text=Ol%C3%A1%2C%20FB%20Clinic%20-%20Odontologia%20de%20alta%20performance%20%7C%20Dentista%20Praia%20Brava%20/%20Balne%C3%A1rio%20Cambori%C3%BA%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Implantes%20Dent%C3%A1rios." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">02</span><h3>Lentes de Contato Dental</h3><p>Transforme o formato e a cor dos seus dentes com laminados cerâmicos de alta durabilidade.</p></div><a class="card-link" href="https://wa.me/5547992677790?text=Ol%C3%A1%2C%20FB%20Clinic%20-%20Odontologia%20de%20alta%20performance%20%7C%20Dentista%20Praia%20Brava%20/%20Balne%C3%A1rio%20Cambori%C3%BA%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Lentes%20de%20Contato%20Dental." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">03</span><h3>Ortodontia Estética</h3><p>Alinhe seus dentes de forma discreta e confortável utilizando aparelhos modernos.</p></div><a class="card-link" href="https://wa.me/5547992677790?text=Ol%C3%A1%2C%20FB%20Clinic%20-%20Odontologia%20de%20alta%20performance%20%7C%20Dentista%20Praia%20Brava%20/%20Balne%C3%A1rio%20Cambori%C3%BA%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Ortodontia%20Est%C3%A9tica." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">04</span><h3>Clareamento a Laser</h3><p>Deixe seus dentes mais brancos rapidamente em uma sessão segura e supervisionada.</p></div><a class="card-link" href="https://wa.me/5547992677790?text=Ol%C3%A1%2C%20FB%20Clinic%20-%20Odontologia%20de%20alta%20performance%20%7C%20Dentista%20Praia%20Brava%20/%20Balne%C3%A1rio%20Cambori%C3%BA%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Clareamento%20a%20Laser." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container split">
+        <div class="panel">
+          <h2>Por que escolher FB Clinic - Odontologia de alta performance | Dentista Praia Brava / Balneário Camboriú</h2>
+          <ul class="why-list">
+            <li><span class="check" aria-hidden="true">✓</span><span>Atendimento odontológico de alta performance na região da Praia Brava</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Estrutura moderna e acolhedora para o seu total conforto</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Equipe altamente qualificada focada em resultados estéticos e funcionais</span></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Contato e Localização</h2>
+          <ul class="contact-list">
+            <li><strong>Endereço:</strong> Av. Carlos Drummond de Andrade, 631</li><li><strong>Telefone:</strong> <a href="tel:47992677790">(47) 99267-7790</a></li><li><strong>Instagram:</strong> <a href="https://instagram.com/mateusbasan" target="_blank" rel="noopener noreferrer">https://instagram.com/mateusbasan</a></li><li><strong>Site Atual:</strong> <a href="https://fbdentalclinic.com.br/" target="_blank" rel="noopener noreferrer">https://fbdentalclinic.com.br/</a></li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/FB+Clinic+-+Odontologia+de+alta+performance+%7C+Dentista+Praia+Brava+%2F+Balne%C3%A1rio+Cambori%C3%BA/data=!4m7!3m6!1s0x94d8cba0c7c4e98f:0xc37cfc7deb53f0ef!8m2!3d-26.955961!4d-48.636323!16s%2Fg%2F11td8hk9l8!19sChIJj-nEx6DL2JQR7_BT6338fMM?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
+          </ul>
+          <a class="btn" href="https://wa.me/5547992677790?text=Ol%C3%A1%2C%20FB%20Clinic%20-%20Odontologia%20de%20alta%20performance%20%7C%20Dentista%20Praia%20Brava%20/%20Balne%C3%A1rio%20Cambori%C3%BA%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+            Agendar Consulta
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-heading">
+      <div class="container">
+        <h2 id="faq-heading">Dúvidas Frequentes</h2>
+        <div class="faq-stack">
+          <details class="faq-item"><summary>Onde a clínica está localizada?</summary><p>Estamos localizados na Av. Carlos Drummond de Andrade, 631, na região da Praia Brava em Balneário Camboriú.</p></details>
+<details class="faq-item"><summary>Como posso agendar uma avaliação?</summary><p>Você pode entrar em contato conosco diretamente pelo telefone (47) 99267-7790 ou através do nosso botão de WhatsApp.</p></details>
+<details class="faq-item"><summary>Quais tratamentos são oferecidos?</summary><p>Oferecemos uma linha completa de procedimentos de alta performance, incluindo implantes, lentes de contato e ortodontia.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <strong>FB Clinic - Odontologia de alta performance | Dentista Praia Brava / Balneário Camboriú</strong> — Preview demonstrativo criado exclusivamente para FB Clinic - Odontologia de alta performance | Dentista Praia Brava / Balneário Camboriú.
+    </div>
+  </footer>
+
+  <a class="floating-wa" href="https://wa.me/5547992677790?text=Ol%C3%A1%2C%20FB%20Clinic%20-%20Odontologia%20de%20alta%20performance%20%7C%20Dentista%20Praia%20Brava%20/%20Balne%C3%A1rio%20Cambori%C3%BA%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Agendar Consulta">Agendar Consulta</a>
+</body>
+</html>

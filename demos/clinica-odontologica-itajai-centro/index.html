@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Odontológica Itajaí | Centro — Clinica Odontologica</title>
+  <style>
+    :root {
+      --primary: #0284c7;
+      --accent: #0d9488;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--primary); }
+    .container { width: min(1040px, calc(100% - 2rem)); margin-inline: auto; }
+    .preview-strip {
+      background: #0f172a;
+      color: #cbd5e1;
+      font-size: 0.78rem;
+      text-align: center;
+      padding: 0.45rem 1rem;
+    }
+    .site-header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 64px;
+      flex-wrap: wrap;
+      padding-block: 0.5rem;
+    }
+    .brand { font-weight: 800; font-size: 1.05rem; letter-spacing: -0.02em; color: var(--ink); }
+    .brand-sub { display: block; font-size: 0.76rem; font-weight: 600; color: var(--muted); }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 12px;
+      padding: 0.72rem 1.25rem;
+      font-size: 0.94rem;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.14);
+      transition: transform 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-sm { padding: 0.5rem 0.95rem; font-size: 0.84rem; }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: none;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+    .hero {
+      background: linear-gradient(155deg, rgba(15, 23, 42, 0.84) 0%, rgba(15, 23, 42, 0.92) 100%), url('../assets/modern-dental-clinic-bright.jpg') center / cover no-repeat;
+      color: #f8fafc;
+      padding: 3.5rem 0 3.75rem;
+    }
+    .kicker {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .rating-pill {
+      display: inline-block;
+      margin-left: 0.5rem;
+      background: rgba(250, 204, 21, 0.16);
+      border: 1px solid rgba(250, 204, 21, 0.45);
+      color: #fde047;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .hero h1 {
+      margin: 0 0 0.9rem;
+      font-size: clamp(1.85rem, 4vw, 2.85rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      max-width: 19ch;
+    }
+    .hero p {
+      margin: 0 0 1.6rem;
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      max-width: 58ch;
+    }
+    section { padding: 3rem 0; }
+    h2 {
+      margin: 0 0 1.4rem;
+      font-size: clamp(1.35rem, 2.6vw, 1.85rem);
+      letter-spacing: -0.02em;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.15rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.35rem;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
+    }
+    .card-index {
+      display: inline-block;
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .card h3 { margin: 0 0 0.4rem; font-size: 1.04rem; }
+    .card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: var(--primary);
+    }
+    .card-link:hover { text-decoration: underline; }
+    .split {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem;
+    }
+    .why-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.85rem;
+    }
+    .why-list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 0.65rem;
+      align-items: start;
+    }
+    .check {
+      display: grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.14);
+      color: #059669;
+      font-weight: 800;
+      font-size: 0.82rem;
+    }
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.25rem;
+      display: grid;
+      gap: 0.65rem;
+      font-size: 0.94rem;
+      word-break: break-word;
+    }
+    .faq-stack { display: grid; gap: 0.75rem; }
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.95rem 1.15rem;
+    }
+    .faq-item summary { font-weight: 700; cursor: pointer; }
+    .faq-item p { margin: 0.6rem 0 0; color: var(--muted); font-size: 0.92rem; }
+    footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 1.5rem 0 4.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    .floating-wa {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 30;
+      background: #16a34a;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 0.78rem 1.15rem;
+      border-radius: 999px;
+      box-shadow: 0 12px 28px rgba(22, 163, 74, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-strip">Preview Personalizado ao Vivo para Clínica Odontológica Itajaí | Centro</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        Clínica Odontológica Itajaí | Centro
+        <span class="brand-sub">Clinica Odontologica • Itajai</span>
+      </div>
+      <a class="btn btn-sm" href="https://wa.me/5547996337392?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Itaja%C3%AD%20%7C%20Centro%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+        Agendar Consulta no WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div>
+          <span class="kicker">Clinica Odontologica • Itajai</span>
+          <div class="rating-pill">★ 5.0 (19 avaliações no Google)</div>
+        </div>
+        <h1>Sorrisos Saudáveis e Radiantes no Centro de Itajaí</h1>
+        <p>Cuidamos da sua saúde bucal com tecnologia avançada e atendimento humanizado. Agende sua consulta com nossos especialistas hoje mesmo.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/5547996337392?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Itaja%C3%AD%20%7C%20Centro%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+            Agendar Consulta no WhatsApp
+          </a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/place/Cl%C3%ADnica+Odontol%C3%B3gica+Itaja%C3%AD+%7C+Centro/data=!4m7!3m6!1s0x94d8cd34e09ffb1d:0xb7306677b7d22646!8m2!3d-26.9094638!4d-48.6602334!16s%2Fg%2F11x5h1bx0x!19sChIJHfuf4DTN2JQRRibSt3dmMLc?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Mapa</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading">Nossos Serviços</h2>
+        <div class="cards-grid">
+          <article class="card"><div><span class="card-index">01</span><h3>Clínica Geral e Prevenção</h3><p>Manutenção da saúde bucal, limpezas periódicas e prevenção de cáries e doenças gengivais para toda a família.</p></div><a class="card-link" href="https://wa.me/5547996337392?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Itaja%C3%AD%20%7C%20Centro%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Cl%C3%ADnica%20Geral%20e%20Preven%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">02</span><h3>Clareamento Dental</h3><p>Técnicas modernas e seguras para deixar seus dentes mais brancos e devolver a confiança ao seu sorriso.</p></div><a class="card-link" href="https://wa.me/5547996337392?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Itaja%C3%AD%20%7C%20Centro%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Clareamento%20Dental." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">03</span><h3>Ortodontia</h3><p>Correção do alinhamento dos dentes e da morduta com aparelhos estéticos e tradicionais.</p></div><a class="card-link" href="https://wa.me/5547996337392?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Itaja%C3%AD%20%7C%20Centro%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Ortodontia." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+<article class="card"><div><span class="card-index">04</span><h3>Implantes Dentários</h3><p>Recupere a função mastigatória e a estética do seu sorriso com implantes seguros e duradouros.</p></div><a class="card-link" href="https://wa.me/5547996337392?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Itaja%C3%AD%20%7C%20Centro%21%20Vi%20o%20preview%20de%20voc%C3%AAs%20e%20gostaria%20de%20saber%20mais%20/%20agendar%3A%20Implantes%20Dent%C3%A1rios." target="_blank" rel="noopener noreferrer">Consultar / Agendar →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container split">
+        <div class="panel">
+          <h2>Por que escolher Clínica Odontológica Itajaí | Centro</h2>
+          <ul class="why-list">
+            <li><span class="check" aria-hidden="true">✓</span><span>Atendimento humanizado e focado no seu conforto</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Localização privilegiada no Centro de Itajaí</span></li>
+<li><span class="check" aria-hidden="true">✓</span><span>Profissionais altamente capacitados e experientes</span></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Contato e Localização</h2>
+          <ul class="contact-list">
+            <li><strong>Endereço:</strong> Av. Cel. Marcos Konder, N° 805</li><li><strong>Telefone:</strong> <a href="tel:47996337392">(47) 99633-7392</a></li><li><strong>Instagram:</strong> <a href="https://www.instagram.com/clinicaodontologicaitajai?igsh=eXU1c2hxdHpoNngy" target="_blank" rel="noopener noreferrer">https://www.instagram.com/clinicaodontologicaitajai?igsh=eXU1c2hxdHpoNngy</a></li><li><strong>Site Atual:</strong> <a href="https://www.instagram.com/clinicaodontologicaitajai?igsh=eXU1c2hxdHpoNngy" target="_blank" rel="noopener noreferrer">https://www.instagram.com/clinicaodontologicaitajai?igsh=eXU1c2hxdHpoNngy</a></li><li><strong>Google Maps:</strong> <a href="https://www.google.com/maps/place/Cl%C3%ADnica+Odontol%C3%B3gica+Itaja%C3%AD+%7C+Centro/data=!4m7!3m6!1s0x94d8cd34e09ffb1d:0xb7306677b7d22646!8m2!3d-26.9094638!4d-48.6602334!16s%2Fg%2F11x5h1bx0x!19sChIJHfuf4DTN2JQRRibSt3dmMLc?authuser=0&amp;hl=pt-BR&amp;g_ep=EgoyMDI2MTExMC4wIJJjKgBIAVAD&amp;rclk=1" target="_blank" rel="noopener noreferrer">Ver no Google Maps / Rotas</a></li>
+          </ul>
+          <a class="btn" href="https://wa.me/5547996337392?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Itaja%C3%AD%20%7C%20Centro%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer">
+            Agendar Consulta no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-heading">
+      <div class="container">
+        <h2 id="faq-heading">Dúvidas Frequentes</h2>
+        <div class="faq-stack">
+          <details class="faq-item"><summary>Onde a clínica está localizada?</summary><p>Estamos localizados na Av. Cel. Marcos Konder, N° 805, no Centro de Itajaí.</p></details>
+<details class="faq-item"><summary>Como posso agendar uma consulta?</summary><p>Você pode agendar sua avaliação facilmente através do nosso WhatsApp (47) 99633-7392.</p></details>
+<details class="faq-item"><summary>Vocês realizam atendimento de emergência?</summary><p>Entre em contato conosco pelo telefone para verificar a disponibilidade de atendimento para casos urgentes.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <strong>Clínica Odontológica Itajaí | Centro</strong> — Preview demonstrativo criado exclusivamente para Clínica Odontológica Itajaí | Centro.
+    </div>
+  </footer>
+
+  <a class="floating-wa" href="https://wa.me/5547996337392?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Itaja%C3%AD%20%7C%20Centro%21%20Vi%20a%20p%C3%A1gina%20de%20apresenta%C3%A7%C3%A3o%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20/%20agendar." target="_blank" rel="noopener noreferrer" aria-label="Agendar Consulta no WhatsApp">Agendar Consulta no WhatsApp</a>
+</body>
+</html>

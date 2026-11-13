@@ -49,6 +49,14 @@
       "url": "demos/academia-wave-navegantes-navegantes/index.html"
     },
     {
+      "slug": "alves-odontologia-integrada-itajai",
+      "name": "Alves Odontologia Integrada",
+      "niche": "clinica odontologica",
+      "city": "Itajai",
+      "lang": "pt-BR",
+      "url": "demos/alves-odontologia-integrada-itajai/index.html"
+    },
+    {
       "slug": "am-studio-de-pilates-joinville",
       "name": "AM Studio de Pilates",
       "niche": "pilates",
@@ -161,6 +169,14 @@
       "url": "demos/clinica-de-estetica-hamonir-itajai/index.html"
     },
     {
+      "slug": "clinica-dentaria-joinville",
+      "name": "Clínica Dentária Joinville",
+      "niche": "clinica odontologica",
+      "city": "Joinville",
+      "lang": "pt-BR",
+      "url": "demos/clinica-dentaria-joinville/index.html"
+    },
+    {
       "slug": "clinica-dra-adriana-vinhal-instituto-8a31fc",
       "name": "Clínica Dra Adriana Vinhal - Instituto Acadêmico Vinhal",
       "niche": "clinica estetica",
@@ -191,6 +207,30 @@
       "city": "Balneario Camboriu",
       "lang": "pt-BR",
       "url": "demos/clinica-lais-loraine-tricologia-e-139fbb/index.html"
+    },
+    {
+      "slug": "clinica-odontologica-hospital-sorria-a653a9",
+      "name": "Clínica Odontológica Hospital Sorria",
+      "niche": "clinica odontologica",
+      "city": "Balneario Camboriu",
+      "lang": "pt-BR",
+      "url": "demos/clinica-odontologica-hospital-sorria-a653a9/index.html"
+    },
+    {
+      "slug": "clinica-odontologica-itajai-centro",
+      "name": "Clínica Odontológica Itajaí | Centro",
+      "niche": "clinica odontologica",
+      "city": "Itajai",
+      "lang": "pt-BR",
+      "url": "demos/clinica-odontologica-itajai-centro/index.html"
+    },
+    {
+      "slug": "clinica-odontologica-marcelo-joinville",
+      "name": "Clínica Odontologica Marcelo",
+      "niche": "clinica odontologica",
+      "city": "Joinville",
+      "lang": "pt-BR",
+      "url": "demos/clinica-odontologica-marcelo-joinville/index.html"
     },
     {
       "slug": "conveka-navegantes",
@@ -225,12 +265,52 @@
       "url": "demos/d-luxe-clinica-de-estetica-itajai/index.html"
     },
     {
+      "slug": "dentelli-itajai",
+      "name": "Dentelli Itajaí",
+      "niche": "clinica odontologica",
+      "city": "Itajai",
+      "lang": "pt-BR",
+      "url": "demos/dentelli-itajai/index.html"
+    },
+    {
+      "slug": "dentista-em-itajai-ada-odontologia",
+      "name": "Dentista em Itajaí - Ada Odontologia",
+      "niche": "clinica odontologica",
+      "city": "Itajai",
+      "lang": "pt-BR",
+      "url": "demos/dentista-em-itajai-ada-odontologia/index.html"
+    },
+    {
+      "slug": "dr-pablo-sandoval-joinville",
+      "name": "Dr. Pablo Sandoval",
+      "niche": "clinica odontologica",
+      "city": "Joinville",
+      "lang": "pt-BR",
+      "url": "demos/dr-pablo-sandoval-joinville/index.html"
+    },
+    {
+      "slug": "dualclinic-odontologia-24h-joinville",
+      "name": "DualClinic | Odontologia 24h",
+      "niche": "clinica odontologica",
+      "city": "Joinville",
+      "lang": "pt-BR",
+      "url": "demos/dualclinic-odontologia-24h-joinville/index.html"
+    },
+    {
       "slug": "dudu-conveniencia-navegantes",
       "name": "Dudu Conveniência",
       "niche": "conveniencia",
       "city": "Navegantes",
       "lang": "pt-BR",
       "url": "demos/dudu-conveniencia-navegantes/index.html"
+    },
+    {
+      "slug": "fb-clinic-odontologia-de-alta-a2bff6",
+      "name": "FB Clinic - Odontologia de alta performance | Dentista Praia Brava / Balneário Camboriú",
+      "niche": "clinica odontologica",
+      "city": "Balneario Camboriu",
+      "lang": "pt-BR",
+      "url": "demos/fb-clinic-odontologia-de-alta-a2bff6/index.html"
     },
     {
       "slug": "it-s-a-secret-med-spa-austin-austin-tx",
@@ -247,6 +327,14 @@
       "city": "Navegantes",
       "lang": "pt-BR",
       "url": "demos/jm-barbearia-navegantes/index.html"
+    },
+    {
+      "slug": "le-clinique-odontologia-dentistas-em-fb99a0",
+      "name": "Le Clinique Odontologia | Dentistas em Balneário Camboriú",
+      "niche": "clinica odontologica",
+      "city": "Balneario Camboriu",
+      "lang": "pt-BR",
+      "url": "demos/le-clinique-odontologia-dentistas-em-fb99a0/index.html"
     },
     {
       "slug": "lord-s-barber-navegantes",
@@ -281,6 +369,14 @@
       "url": "demos/maui-medspa-austin-tx/index.html"
     },
     {
+      "slug": "midtown-dental-miami-miami-fl",
+      "name": "Midtown Dental Miami",
+      "niche": "dentist",
+      "city": "Miami, FL",
+      "lang": "en",
+      "url": "demos/midtown-dental-miami-miami-fl/index.html"
+    },
+    {
       "slug": "momentum-centro-de-treinamento-navegantes",
       "name": "Momentum Centro de Treinamento",
       "niche": "academia",
@@ -313,12 +409,60 @@
       "url": "demos/navega-bier-conveniencia-24horas-navegantes/index.html"
     },
     {
+      "slug": "neon-conveniencia-navegantes",
+      "name": "NEON CONVENIENCIA",
+      "niche": "conveniencia",
+      "city": "Navegantes",
+      "lang": "pt-BR",
+      "url": "demos/neon-conveniencia-navegantes/index.html"
+    },
+    {
       "slug": "nomaclub-joinville",
       "name": "Nomaclub",
       "niche": "pilates",
       "city": "Joinville",
       "lang": "pt-BR",
       "url": "demos/nomaclub-joinville/index.html"
+    },
+    {
+      "slug": "odonto-vergueiro-itajai",
+      "name": "Odonto Vergueiro",
+      "niche": "clinica odontologica",
+      "city": "Itajai",
+      "lang": "pt-BR",
+      "url": "demos/odonto-vergueiro-itajai/index.html"
+    },
+    {
+      "slug": "odontotop-balneario-camboriu",
+      "name": "OdontoTop Balneário Camboriú",
+      "niche": "clinica odontologica",
+      "city": "Balneario Camboriu",
+      "lang": "pt-BR",
+      "url": "demos/odontotop-balneario-camboriu/index.html"
+    },
+    {
+      "slug": "one-dental-miami-miami-fl",
+      "name": "ONE Dental Miami",
+      "niche": "dentist",
+      "city": "Miami, FL",
+      "lang": "en",
+      "url": "demos/one-dental-miami-miami-fl/index.html"
+    },
+    {
+      "slug": "oral-prime-clinica-odontologica-joinville",
+      "name": "Oral Prime Clinica Odontológica",
+      "niche": "clinica odontologica",
+      "city": "Joinville",
+      "lang": "pt-BR",
+      "url": "demos/oral-prime-clinica-odontologica-joinville/index.html"
+    },
+    {
+      "slug": "oral-unic-implantes-balneario-camboriu",
+      "name": "Oral Unic Implantes Balneário Camboriú",
+      "niche": "clinica odontologica",
+      "city": "Balneario Camboriu",
+      "lang": "pt-BR",
+      "url": "demos/oral-unic-implantes-balneario-camboriu/index.html"
     },
     {
       "slug": "panobianco-navegantes-navegantes",
@@ -335,6 +479,14 @@
       "city": "Joinville",
       "lang": "pt-BR",
       "url": "demos/pilates-saude-boa-vista-unidade-2-joinville/index.html"
+    },
+    {
+      "slug": "relax-and-smile-dental-care-miami-fl",
+      "name": "Relax and Smile Dental Care",
+      "niche": "dentist",
+      "city": "Miami, FL",
+      "lang": "en",
+      "url": "demos/relax-and-smile-dental-care-miami-fl/index.html"
     },
     {
       "slug": "santos-auto-center-blumenau",
@@ -375,6 +527,22 @@
       "city": "Joinville",
       "lang": "pt-BR",
       "url": "demos/studio-respilates-joinville/index.html"
+    },
+    {
+      "slug": "super-dentist-miami-miami-fl",
+      "name": "Super Dentist Miami",
+      "niche": "dentist",
+      "city": "Miami, FL",
+      "lang": "en",
+      "url": "demos/super-dentist-miami-miami-fl/index.html"
+    },
+    {
+      "slug": "ultra-smile-miami-miami-fl",
+      "name": "Ultra Smile Miami",
+      "niche": "dentist",
+      "city": "Miami, FL",
+      "lang": "en",
+      "url": "demos/ultra-smile-miami-miami-fl/index.html"
     },
     {
       "slug": "v8-conveniencia-navegantes",
